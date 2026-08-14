@@ -1,0 +1,221 @@
+/* =========================================================
+   1. GENERAL DESIGN 
+   ========================================================= */
+:root {
+  --color-background: #f8f6f1;
+  --color-surface: #ffffff;
+  --color-text: #272522;
+  --color-text-soft: #6d6861;
+  --color-border: #ded9d1;
+  --color-accent: #8c7157;
+  --color-accent-dark: #66503e;
+
+  --font-body:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+
+  --container-width: 1200px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --radius-sm: 4px;
+
+  --transition: 180ms ease;
+}
+
+/* =========================================================
+   2. RESET & GLOBAL 
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: var(--space-lg);
+
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  letter-spacing: -0.04em;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* =========================================================
+   4. LAYOUT
+   ========================================================= */
+.container {
+  width: min(calc(100% - 4rem), var(--container-width));
+  margin-inline: auto;
+}
+
+section {
+  padding-block: var(--space-3xl);
+}
+
+/* =========================================================
+   5. SHARED UI
+   ========================================================= */
+.eyebrow {
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-accent-dark);
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0.8rem 1.5rem;
+
+  border: 1px solid transparent;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: var(--color-text);
+}
+
+.button-primary:hover {
+  background: var(--color-accent-dark);
+}
+
+.button-secondary {
+  border-color: var(--color-text);
+  background: transparent;
+}
+
+.button-secondary:hover {
+  color: #ffffff;
+  background: var(--color-text);
+}
+
+/* =========================================================
+   6. HOMEPAGE
+   ========================================================= */
+.hero-section {
+  display: flex;
+  align-items: center;
+
+  min-height: 90vh;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin-bottom: var(--space-xl);
+
+  color: var(--color-text-soft);
+  font-size: 1.15rem;
+}
+
+/* =========================================================
+   7. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: min(calc(100% - 2rem), var(--container-width));
+  }
+
+  section {
+    padding-block: var(--space-2xl);
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-top: var(--space-3xl);
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
