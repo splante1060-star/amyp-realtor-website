@@ -1,6 +1,6 @@
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import RealEstatePersonalSection from "./components/RealEstatePersonalSection";
+import HeroSection from "./components/home/HeroSection";
+import RealEstatePersonalSection from "./components/home/RealEstatePersonalSection";
 
 export default function App() {
   return (
