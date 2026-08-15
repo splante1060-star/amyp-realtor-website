@@ -422,6 +422,8 @@ section {
   overflow: hidden;
   background: #7e1e1e;
   color: #f8f5ef;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .real-estate-personal::before {
@@ -448,7 +450,7 @@ section {
   width: min(100% - 3rem, 1120px);
   margin-inline: auto;
   min-height: 520px;
-  padding: 4.5rem 0;
+  padding: 3.5rem 0;
 
   position: relative;
   z-index: 1;
@@ -858,7 +860,7 @@ section {
   .real-estate-personal-inner {
     width: calc(100% - 3rem);
     min-height: auto;
-    padding: 4rem 0;
+    padding: 2rem 0;
 
     grid-template-columns: 1fr;
     gap: 3.5rem;
