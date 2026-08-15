@@ -1,4 +1,4 @@
-import heroAmy from "../assets/Amy-Plante-Branding-1.jpg";
+import heroAmy from "../../assets/Amy-Plante-Branding-1.jpg";
 
 export default function HeroSection() {
   return (
