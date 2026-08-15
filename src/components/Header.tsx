@@ -1,9 +1,10 @@
 import { useState } from "react";
-import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
-import GoogleIcon from "@mui/icons-material/Google";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import OtherHousesOutlinedIcon from "@mui/icons-material/OtherHousesOutlined";
+import RateReviewOutlinedIcon from "@mui/icons-material/RateReviewOutlined";
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import logo from "../assets/Plante Realty Logo-US.png";
 
 export default function Header() {
@@ -26,9 +27,6 @@ export default function Header() {
           <a href="/prep-to-sell">Prep to Sell</a>
           <a href="/estate-sales-downsizing">Estate Sales / Downsizing</a>
           <a href="/airbnb-investment">Airbnb & Investment</a>
-          <a href="https://amyplante.kw.com/" target="_blank" rel="noreferrer">
-            Search Homes
-          </a>
           <div
             className="nav-dropdown"
             onMouseEnter={() => setResourcesOpen(true)}
@@ -64,23 +62,29 @@ export default function Header() {
                   <HomeOutlinedIcon />
                   <span>Get Your Home Value</span>
                 </a>
-
                 <a
-                  href="https://ovou.com/exayodusofuyomav"
+                  href="https://amyplante.kw.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <PersonOutlineRoundedIcon />
-                  <span>Contact Info & Reviews</span>
+                  <SearchRoundedIcon />
+                  <span>Search Homes</span>
                 </a>
-
                 <a
-                  href="https://www.google.com/search?q=Amy+Plante+Realtor"
+                  href="https://www.zillow.com/profile/amyplante"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <GoogleIcon />
-                  <span>Google Reviews</span>
+                  <OtherHousesOutlinedIcon />
+                  <span>Zillow Profile & Reviews</span>
+                </a>
+                <a
+                  href="https://g.page/r/CQilLLeWg4U_EBM/review"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RateReviewOutlinedIcon />
+                  <span>Leave a Review</span>
                 </a>
               </div>
             )}
