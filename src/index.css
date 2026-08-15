@@ -316,12 +316,12 @@ section {
 }
 
 /* =========================================================
-   7. HOMEPAGE -- HERO
+   7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE
    ========================================================= */
 /* Hero */
 .hero-section {
   padding-top: 3.5rem;
-  padding-bottom: var(--space-3xl);
+  padding-bottom: 2rem;
 }
 
 .hero-container {
@@ -414,6 +414,54 @@ section {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+/* Personal Real Estate */
+.real-estate-personal {
+  padding: var(--space-xl) 0 var(--space-3xl);
+}
+
+.real-estate-personal-inner {
+  width: min(calc(100% - 4rem), 980px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.real-estate-personal-inner::before {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 2px;
+  margin: 0 auto var(--space-lg);
+  background: var(--color-accent);
+}
+
+.real-estate-personal h2 {
+  max-width: 850px;
+  margin: 0 auto var(--space-xl);
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 4.5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.real-estate-personal-copy {
+  max-width: 720px;
+  margin: 0 auto;
+
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.real-estate-personal-copy p {
+  margin: 0;
+}
+
+.real-estate-personal-copy p + p {
+  margin-top: var(--space-md);
 }
 
 /* =========================================================
@@ -583,7 +631,7 @@ section {
     color: var(--color-accent);
   }
 
-  /* HOMEPAGE */
+  /* HOMEPAGE - HERO */
   .hero-section {
     padding-top: 2.5rem;
   }
@@ -620,9 +668,12 @@ section {
   }
 
   .hero-mobile-image .hero-image {
+    width: 100%;
+    max-height: 620px;
+
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 28%;
   }
 
   .hero-copy {
@@ -643,5 +694,24 @@ section {
     margin: 0.5rem 0 0;
 
     text-align: center;
+  }
+
+  /* HOMEPAGE - PERSONAL REAL ESTATE */
+  .real-estate-personal {
+    padding: var(--space-xl) 0 var(--space-2xl);
+  }
+
+  .real-estate-personal-inner {
+    width: calc(100% - 3rem);
+  }
+
+  .real-estate-personal h2 {
+    font-size: clamp(2.25rem, 10vw, 3.2rem);
+    line-height: 1.08;
+  }
+
+  .real-estate-personal-copy {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 }
