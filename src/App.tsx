@@ -1,6 +1,10 @@
+import Header from "./components/Header";
+
 export default function App() {
   return (
     <div>
+      <Header />
+
       <section className="hero-section">
         <div className="container">
           <p className="eyebrow">Massachusetts · Rhode Island · Florida</p>
