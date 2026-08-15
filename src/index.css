@@ -418,50 +418,95 @@ section {
 
 /* Personal Real Estate */
 .real-estate-personal {
-  padding: var(--space-xl) 0 var(--space-3xl);
+  position: relative;
+  overflow: hidden;
+  background: #7e1e1e;
+  color: #f8f5ef;
+}
+
+.real-estate-personal::before {
+  content: "HOME";
+  position: absolute;
+  left: 50%;
+  bottom: -0.22em;
+  transform: translateX(-50%);
+
+  font-family: var(--font-heading);
+  font-size: clamp(12rem, 27vw, 28rem);
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: -0.06em;
+
+  color: rgba(248, 245, 239, 0.035);
+  opacity: 0.65;
+
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 .real-estate-personal-inner {
-  width: min(calc(100% - 4rem), 980px);
-  margin: 0 auto;
-  text-align: center;
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+  min-height: 520px;
+  padding: 4.5rem 0;
+
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 7rem;
+  align-items: start;
 }
 
-.real-estate-personal-inner::before {
-  content: "";
-  display: block;
-  width: 65%;
-  height: 2px;
-  margin: 0 auto var(--space-lg);
-  background: var(--color-accent);
+.real-estate-personal-intro {
+  max-width: 600px;
+  padding-top: 1rem;
 }
 
 .real-estate-personal h2 {
-  max-width: 850px;
-  margin: 0 auto var(--space-xl);
+  margin: 0 0 1.75rem;
 
   font-family: var(--font-heading);
-  font-size: clamp(2.6rem, 4.5vw, 4.8rem);
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
 }
 
-.real-estate-personal-copy {
-  max-width: 720px;
-  margin: 0 auto;
-
-  color: var(--color-text-muted);
-  font-size: 1.05rem;
-  line-height: 1.8;
+.real-estate-personal-intro p {
+  max-width: 520px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(248, 245, 239, 0.82);
 }
 
-.real-estate-personal-copy p {
+/* .real-estate-personal-statement::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  margin-bottom: 1.5rem;
+  background: rgba(248, 245, 239, 0.5);
+} */
+
+.real-estate-personal-statement {
+  align-self: end;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  max-width: 430px;
+
+  position: relative;
+  top: -30px;
+}
+
+.real-estate-personal-statement p {
+  max-width: 420px;
   margin: 0;
-}
 
-.real-estate-personal-copy p + p {
-  margin-top: var(--space-md);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+  line-height: 1.08;
 }
 
 /* About Amy */
@@ -800,22 +845,44 @@ section {
   }
 
   /* HOMEPAGE - PERSONAL REAL ESTATE */
-  .real-estate-personal {
-    padding: var(--space-xl) 0 var(--space-2xl);
-  }
-
   .real-estate-personal-inner {
     width: calc(100% - 3rem);
+    min-height: auto;
+    padding: 4rem 0;
+
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
   }
 
   .real-estate-personal h2 {
-    font-size: clamp(2.25rem, 10vw, 3.2rem);
-    line-height: 1.08;
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    line-height: 1;
   }
 
-  .real-estate-personal-copy {
+  .real-estate-personal-intro p {
     font-size: 1rem;
     line-height: 1.7;
+  }
+
+  .real-estate-personal::before {
+    font-size: clamp(8rem, 34vw, 11rem);
+    letter-spacing: -0.06em;
+    white-space: nowrap;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.1em;
+  }
+
+  .real-estate-personal-statement {
+    padding: 0 0 0 1.5rem;
+    border-left: 2px solid rgba(248, 245, 239, 0.55);
+  }
+
+  .real-estate-personal-statement p {
+    font-size: 2rem;
+    line-height: 1.15;
   }
 
   /* HOMEPAGE - ABOUT AMY */

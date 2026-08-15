@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import HeroSection from "./components/home/HeroSection";
-// import RealEstatePersonalSection from "./components/home/RealEstatePersonalSection";
+import RealEstatePersonalSection from "./components/home/RealEstatePersonalSection";
 import AboutAmySection from "./components/home/AboutAmySection";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
     <div>
       <Header />
       <HeroSection />
-      {/* <RealEstatePersonalSection /> */}
+      <RealEstatePersonalSection />
       <AboutAmySection />
     </div>
   );

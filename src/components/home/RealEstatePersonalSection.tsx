@@ -1,25 +1,18 @@
 export default function RealEstatePersonalSection() {
   return (
-    <section
-      className="real-estate-personal"
-      aria-labelledby="real-estate-personal-heading"
-    >
+    <section className="real-estate-personal">
       <div className="real-estate-personal-inner">
-        <h2 id="real-estate-personal-heading">
-          Whatever brings you here, you don't have to navigate it alone.
-        </h2>
-
-        <div className="real-estate-personal-copy">
-          <p>
-            Buying your first home. Selling the house where you raised your
-            family. Navigating real estate during a divorce. Preparing a
-            longtime home for sale. Investing in something new.
-          </p>
+        <div className="real-estate-personal-intro">
+          <h2>What brings you here?</h2>
 
           <p>
-            For more than 24 years, Amy has helped clients move through these
-            moments with experience, strategy, and a deeply personal approach.
+            A first home. A fresh start. A home you've loved for decades. An
+            unexpected change. Or simply a question about what comes next.
           </p>
+        </div>
+
+        <div className="real-estate-personal-statement">
+          <p>Real estate isn't always just about real estate.</p>
         </div>
       </div>
     </section>
