@@ -1,4 +1,9 @@
 import amyAbout from "../../assets/Amy-Plante-Branding-8.jpg";
+import {
+  WorkspacePremiumOutlined,
+  MilitaryTechOutlined,
+  EmojiEventsOutlined,
+} from "@mui/icons-material";
 
 export default function AboutAmySection() {
   return (
@@ -44,18 +49,27 @@ export default function AboutAmySection() {
             </div>
 
             <div className="about-amy-stat">
-              <strong>Top 10</strong>
-              <span>Agent in North Attleboro</span>
+              <strong>
+                <EmojiEventsOutlined className="about-amy-award-icon" />
+                Top 10
+              </strong>
+              <span>2025 Agent · North Attleboro</span>
             </div>
 
             <div className="about-amy-stat">
-              <strong>#8 Regional</strong>
+              <strong>
+                <MilitaryTechOutlined className="about-amy-award-icon" />
+                #8 Regional
+              </strong>
               <span>Individual Teams · GCI · April 2026</span>
             </div>
 
             <div className="about-amy-stat">
-              <strong>Top 10</strong>
-              <span>2025 Team Rankings Across 5 Categories</span>
+              <strong>
+                <WorkspacePremiumOutlined className="about-amy-award-icon" />
+                5× Gold
+              </strong>
+              <span>Keller Williams · 2021–2025</span>
             </div>
           </div>
         </div>
