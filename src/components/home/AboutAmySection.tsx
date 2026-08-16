@@ -67,9 +67,9 @@ export default function AboutAmySection() {
             <div className="about-amy-stat">
               <strong>
                 <WorkspacePremiumOutlined className="about-amy-award-icon" />
-                5× Gold
+                4× Gold
               </strong>
-              <span>Keller Williams · 2021–2025</span>
+              <span>Keller Williams · 2021–2024</span>
             </div>
           </div>
         </div>
