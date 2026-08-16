@@ -15,7 +15,7 @@ const featuredSales = [
     image: "src/assets/IMG_0878.PNG",
     location: "Attleboro, MA",
     salePrice: "$959,900",
-    detail: "Sold Over Asking By $59,000",
+    detail: "Sold Over Asking By $59,900",
   },
   {
     image: "src/assets/IMG_3645.jpg",
