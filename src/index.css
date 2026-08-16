@@ -377,11 +377,17 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  transition: color var(--transition);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    color var(--transition),
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .hero-search-link:hover {
   color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
 .hero-mobile-image {
@@ -1004,10 +1010,15 @@ section {
 
   color: rgba(248, 246, 241, 0.85);
   text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .final-cta-contact-links a:hover {
   color: var(--color-primary);
+  transform: translateY(-2px);
 }
 
 .final-cta-contact-links svg {
@@ -1039,7 +1050,6 @@ section {
 }
 
 .final-cta-socials a:hover {
-  color: var(--color-primary);
   transform: translateY(-2px);
 }
 
