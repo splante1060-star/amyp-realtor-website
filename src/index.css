@@ -315,13 +315,13 @@ section {
   display: none;
 }
 
-/* ===========================================================
-   7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY
-   =========================================================== */
+/* ====================================================================
+   7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY, TESTIMONIALS
+   ==================================================================== */
 /* Hero */
 .hero-section {
   padding-top: 3.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .hero-container {
@@ -624,6 +624,110 @@ section {
   color: var(--color-text-muted);
 }
 
+/* Testimonials */
+.testimonial-section {
+  padding: var(--space-3xl) 0;
+  background: var(--color-background);
+}
+
+.testimonial-container {
+  width: min(calc(100% - 4rem), var(--container-width));
+  margin-inline: auto;
+}
+
+.testimonial-header {
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.testimonial-header h2 {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.testimonial-header p {
+  margin: 0 auto;
+
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  padding: 2rem;
+
+  background: #f7f3ee;
+  border: 1px solid rgba(66, 13, 9, 0.08);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial + .testimonial {
+  border-left: 1px solid var(--color-border);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.12rem;
+  margin-bottom: 1.4rem;
+
+  color: var(--color-accent);
+}
+
+.testimonial-stars svg {
+  font-size: 1.15rem;
+  color: #fdcc0d;
+}
+
+.testimonial blockquote {
+  margin: 1.4rem 0 0;
+}
+
+.testimonial blockquote p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text);
+}
+
+.testimonial-client {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.testimonial-client strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.testimonial-client span {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+
 /* =========================================================
    X. RESPONSIVE
    ========================================================= */
@@ -899,7 +1003,7 @@ section {
 
   /* HOMEPAGE - ABOUT AMY */
   .about-amy-section {
-    padding: 5rem 0;
+    padding: 5rem 0 2.5rem;
   }
 
   .about-amy-container {
@@ -944,5 +1048,68 @@ section {
 
   .about-amy-stat strong {
     font-size: 2.25rem;
+  }
+
+  /* HOMEPAGE - TESTIMONIAL */
+  .testimonial-section {
+    padding: 2.5rem 0 5rem;
+  }
+
+  .testimonial-container {
+    width: calc(100% - 3rem);
+  }
+
+  .testimonial-header {
+    margin: 0 0 2.5rem;
+    text-align: left;
+  }
+
+  .testimonial-header h2 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+
+    color: var(--color-text);
+  }
+
+  .testimonial-header p {
+    margin: 0;
+    max-width: 100%;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    color: var(--color-text-muted);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .testimonial {
+    width: 100%;
+    min-height: auto;
+    padding: 1.75rem;
+    border-radius: 14px;
+  }
+
+  .testimonial blockquote p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .testimonial-client {
+    padding-top: 1.5rem;
+  }
+
+  .testimonial-stars {
+    flex-wrap: nowrap;
+    margin-bottom: 1.25rem;
+  }
+
+  .testimonial-stars svg {
+    font-size: 1.05rem;
   }
 }
