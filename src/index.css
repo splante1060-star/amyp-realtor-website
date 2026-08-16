@@ -11,6 +11,7 @@
   --color-border: #ded9d1;
   --color-accent: #800000;
   --color-accent-dark: #420d09;
+  --color-section-red: #7e1e1e;
 
   --font-body:
     Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -158,13 +159,22 @@ section {
     border-color var(--transition);
 }
 
+.button-primary,
+.button-secondary {
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
 .button-primary {
   color: #ffffff;
   background: var(--color-accent);
 }
 
 .button-primary:hover {
-  background: var(--color-accent-dark);
+  transform: translateY(-2px);
 }
 
 .button-secondary {
@@ -173,8 +183,7 @@ section {
 }
 
 .button-secondary:hover {
-  color: #ffffff;
-  background: var(--color-text);
+  transform: translateY(-2px);
 }
 
 /* =========================================================
@@ -317,7 +326,7 @@ section {
 
 /* =========================================================
    7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY,
-    TESTIMONIALS, FEATURED SALES
+    TESTIMONIALS, FEATURED SALES, FINAL CTA
    ========================================================= */
 /* Hero */
 .hero-section {
@@ -421,7 +430,7 @@ section {
 .real-estate-personal {
   position: relative;
   overflow: hidden;
-  background: #7e1e1e;
+  background: var(--color-section-red);
   color: #f8f5ef;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -787,10 +796,6 @@ section {
   transition: transform 0.45s ease;
 }
 
-/* .featured-sale:hover .featured-sale-image {
-  transform: scale(1.025);
-} */
-
 .featured-sale-info {
   padding-top: 0.75rem;
 }
@@ -830,6 +835,216 @@ section {
   text-transform: uppercase;
 
   color: var(--color-accent);
+}
+
+/* Final CTA */
+.final-cta-section {
+  padding: 3rem 0;
+  background: var(--color-section-red);
+}
+
+.final-cta-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  gap: clamp(4rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.final-cta-image-wrapper {
+  width: 100%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.final-cta-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.final-cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-self: stretch;
+  padding: clamp(3rem, 5vw, 5rem);
+
+  background: var(--color-section-red);
+}
+
+.final-cta-content h2 {
+  margin: 0 0 1.5rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  color: var(--color-background);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.final-cta-content p {
+  max-width: 590px;
+  margin: 0 0 2rem;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(248, 246, 241, 0.82);
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.final-cta-primary,
+.final-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0.85rem 1.4rem;
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-primary {
+  background: var(--color-background);
+  border: 1px solid var(--color-background);
+  color: var(--color-section-red);
+}
+
+.final-cta-primary:hover {
+  transform: translateY(-2px);
+}
+
+.final-cta-secondary {
+  background: transparent;
+  border: 1px solid var(--color-background);
+  color: var(--color-background);
+}
+
+.final-cta-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.final-cta-contact {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+
+  border-top: 1px solid rgba(248, 246, 241, 0.3);
+}
+
+.final-cta-contact span {
+  color: rgba(248, 246, 241, 0.82);
+}
+
+.final-cta-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+
+  margin: 0 0 1rem;
+}
+
+.final-cta-name strong {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-background);
+}
+
+.final-cta-name span {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  color: rgba(248, 246, 241, 0.8);
+}
+
+.final-cta-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+
+  margin-bottom: 1rem;
+}
+
+.final-cta-contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+
+  color: rgba(248, 246, 241, 0.85);
+  text-decoration: none;
+}
+
+.final-cta-contact-links a:hover {
+  color: var(--color-primary);
+}
+
+.final-cta-contact-links svg {
+  flex-shrink: 0;
+
+  width: 1.15rem;
+  height: 1.15rem;
+
+  color: var(--color-background);
+}
+
+.final-cta-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.final-cta-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-background);
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-socials a:hover {
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.final-cta-socials svg {
+  font-size: 2.25rem;
 }
 
 /* =========================================================
@@ -1251,5 +1466,69 @@ section {
 
   .featured-sale-info h3 {
     font-size: 1.4rem;
+  }
+
+  /* HOMEPAGE - FINAL CTA */
+  .final-cta-section {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .final-cta-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .final-cta-image {
+    aspect-ratio: 4 / 5;
+    object-position: center 20%;
+  }
+
+  .final-cta-content {
+    max-width: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .final-cta-content h2 {
+    margin: 0 0 1.25rem;
+
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+  }
+
+  .final-cta-content p {
+    margin-bottom: 1.75rem;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .final-cta-primary,
+  .final-cta-secondary {
+    width: 100%;
+  }
+
+  .final-cta-contact {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    text-align: left;
+  }
+
+  .final-cta-name {
+    align-items: center;
+  }
+
+  .final-cta-contact-links {
+    align-items: center;
+  }
+
+  .final-cta-socials {
+    justify-content: center;
+    margin-top: 1rem;
   }
 }

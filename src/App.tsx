@@ -4,6 +4,7 @@ import RealEstatePersonalSection from "./components/home/RealEstatePersonalSecti
 import AboutAmySection from "./components/home/AboutAmySection";
 import TestimonialSection from "./components/home/TestimonialSection";
 import FeaturedSalesSection from "./components/home/FeaturedSalesSection";
+import FinalCTASection from "./components/home/FinalCTASection";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <AboutAmySection />
       <TestimonialSection />
       <FeaturedSalesSection />
+      <FinalCTASection />
     </div>
   );
 }
