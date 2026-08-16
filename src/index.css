@@ -315,9 +315,10 @@ section {
   display: none;
 }
 
-/* ====================================================================
-   7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY, TESTIMONIALS
-   ==================================================================== */
+/* =========================================================
+   7. HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY,
+    TESTIMONIALS, FEATURED SALES
+   ========================================================= */
 /* Hero */
 .hero-section {
   padding-top: 3.5rem;
@@ -482,15 +483,6 @@ section {
   line-height: 1.7;
   color: rgba(248, 245, 239, 0.82);
 }
-
-/* .real-estate-personal-statement::before {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 1px;
-  margin-bottom: 1.5rem;
-  background: rgba(248, 245, 239, 0.5);
-} */
 
 .real-estate-personal-statement {
   align-self: end;
@@ -726,6 +718,117 @@ section {
 .testimonial-client span {
   color: var(--color-text-muted);
   font-size: 0.78rem;
+}
+
+/* Featured Sales */
+.featured-sales-section {
+  padding: 6rem 0;
+  background: var(--color-background);
+}
+
+.featured-sales-container {
+  width: min(calc(100% - 4rem), var(--container-width));
+  margin-inline: auto;
+}
+
+.featured-sales-header {
+  max-width: 760px;
+  margin-bottom: 3rem;
+}
+
+.featured-sales-header h2 {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
+}
+
+.featured-sales-header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.65;
+
+  color: var(--color-text-muted);
+}
+
+.featured-sales-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem 1.25rem;
+}
+
+.featured-sale {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-sale-image-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  aspect-ratio: 4 / 3;
+  background: #eee9e3;
+}
+
+.featured-sale-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+/* .featured-sale:hover .featured-sale-image {
+  transform: scale(1.025);
+} */
+
+.featured-sale-info {
+  padding-top: 1.1rem;
+}
+
+.featured-sale-info h3 {
+  margin: 0 0 0.45rem;
+
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.1;
+
+  color: var(--color-text);
+}
+
+.featured-sale-price {
+  margin: 0 0 0.45rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: var(--color-text-muted);
+}
+
+.featured-sale-price strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.featured-sale-detail {
+  display: inline-block;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
 }
 
 /* =========================================================
@@ -1111,5 +1214,41 @@ section {
 
   .testimonial-stars svg {
     font-size: 1.05rem;
+  }
+
+  /* HOMEPAGE - FEATURED SALES */
+  .featured-sales-section {
+    padding: 4.5rem 0;
+  }
+
+  .featured-sales-container {
+    width: calc(100% - 3rem);
+  }
+
+  .featured-sales-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .featured-sales-header h2 {
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+  }
+
+  .featured-sales-header p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .featured-sales-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featured-sale-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .featured-sale-info h3 {
+    font-size: 1.4rem;
   }
 }
