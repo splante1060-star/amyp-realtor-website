@@ -1,36 +1,36 @@
 const featuredSales = [
   {
-    image: "src/assets/MH1_6099_edit.jpg",
+    image: "src/assets/Feature-Winchendon.jpg",
     location: "Winchendon, MA",
     salePrice: "$1,300,000",
     detail: "Multiple Offers · Strong Terms Negotiated",
   },
   {
-    image: "src/assets/IMG_7429.JPG",
+    image: "src/assets/Feature-Mansfield.JPG",
     location: "Mansfield, MA",
     salePrice: "$657,000",
     detail: "Sold Over Asking By $77,100",
   },
   {
-    image: "src/assets/IMG_0878.PNG",
+    image: "src/assets/Feature-Attleboro.PNG",
     location: "Attleboro, MA",
     salePrice: "$959,900",
     detail: "Sold Over Asking By $59,900",
   },
   {
-    image: "src/assets/IMG_3645.jpg",
+    image: "src/assets/Feature-Methuen.jpg",
     location: "Methuen, MA",
     salePrice: "$615,000",
     detail: "Sold Over Asking By $66,000",
   },
   {
-    image: "src/assets/IMG_7426.JPG",
+    image: "src/assets/Feature-NAttleboro.JPG",
     location: "North Attleboro, MA",
     salePrice: "$835,000",
     detail: "Sold Over Asking By $90,000",
   },
   {
-    image: "src/assets/20E79435-3AA1-4C8A-A98B-945DEBE257EE.PNG",
+    image: "src/assets/Feature-Cumberland.PNG",
     location: "Cumberland, RI",
     salePrice: "$525,500",
     detail: "Sold Over Asking By $35,600",
