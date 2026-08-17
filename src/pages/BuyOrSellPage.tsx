@@ -1,3 +1,5 @@
+import BuySellHeroSection from "../components/buy-or-sell/BuySellHeroSection";
+
 export default function BuyOrSellPage() {
-  return <h1>Buy or Sell</h1>;
+  return <BuySellHeroSection />;
 }

@@ -1301,6 +1301,114 @@ section {
 }
 
 /* =========================================================
+   9. BUY OR SELL -- HERO,
+   ========================================================= */
+/* Hero */
+.buy-sell-hero {
+  padding: 3.5rem 0 4rem;
+  background: var(--color-background);
+}
+
+.buy-sell-hero-container {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1fr);
+  gap: clamp(3.5rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.buy-sell-hero-content {
+  max-width: 680px;
+}
+
+.buy-sell-hero-content h1 {
+  margin: 0 0 1.75rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3.4rem, 5vw, 5.4rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  color: var(--color-text);
+}
+
+.buy-sell-hero-content p {
+  max-width: 620px;
+  margin: 0 0 2rem;
+
+  color: var(--color-text-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.buy-sell-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.buy-sell-hero-primary,
+.buy-sell-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  width: 185px;
+  padding: 0.85rem 1.5rem;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.buy-sell-hero-primary {
+  color: var(--color-background);
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.buy-sell-hero-primary:hover {
+  /* background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark); */
+  transform: translateY(-2px);
+}
+
+.buy-sell-hero-secondary {
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-text);
+}
+
+.buy-sell-hero-secondary:hover {
+  /* color: var(--color-background);
+  background: var(--color-text); */
+  transform: translateY(-2px);
+}
+
+.buy-sell-hero-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buy-sell-hero-image {
+  display: block;
+  width: 100%;
+  height: 650px;
+
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+/* =========================================================
    X. RESPONSIVE
    ========================================================= */
 
@@ -1864,5 +1972,52 @@ section {
 
   .footer-socials {
     gap: 1rem;
+  }
+
+  /* BUY OR SELL - HERO */
+  .buy-sell-hero {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .buy-sell-hero-container {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .buy-sell-hero-eyebrow {
+    display: block;
+    margin-bottom: 1rem;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
+  .buy-sell-hero-content h1 {
+    font-size: clamp(2.8rem, 11vw, 4rem);
+    line-height: 1.02;
+  }
+
+  .buy-sell-hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .buy-sell-hero-actions {
+    flex-direction: column;
+  }
+
+  .buy-sell-hero-primary,
+  .buy-sell-hero-secondary {
+    width: 100%;
+  }
+
+  .buy-sell-hero-image {
+    height: auto;
+    max-height: 620px;
+
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 25%;
   }
 }
