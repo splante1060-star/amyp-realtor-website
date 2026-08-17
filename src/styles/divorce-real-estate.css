@@ -94,6 +94,14 @@
   color: var(--color-accent);
 }
 
+.hero-mobile-image {
+  display: none;
+}
+
+.hero-desktop-image {
+  display: block;
+}
+
 .divorce-hero-image-wrapper {
   width: 100%;
   overflow: hidden;
@@ -266,6 +274,15 @@
 
     font-size: 0.68rem;
     line-height: 1.5;
+  }
+
+  .hero-mobile-image {
+    display: block;
+    margin: 1.25rem 0 2rem;
+  }
+
+  .hero-desktop-image {
+    display: none;
   }
 
   .divorce-hero-image {

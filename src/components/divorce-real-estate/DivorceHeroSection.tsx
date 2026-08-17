@@ -10,6 +10,14 @@ export default function DivorceHeroSection() {
             guidance.
           </h1>
 
+          <div className="hero-mobile-image">
+            <img
+              className="hero-image"
+              src={divorceHeroImage}
+              alt="Amy Plante"
+            />
+          </div>
+
           <p className="divorce-hero-copy">
             The family home is often one of the largest financial assets in a
             divorce — and one of the most personal. Amy brings specialized
@@ -32,7 +40,7 @@ export default function DivorceHeroSection() {
           </p>
         </div>
 
-        <div className="divorce-hero-image-wrapper">
+        <div className="divorce-hero-image-wrapper hero-desktop-image">
           <img
             src={divorceHeroImage}
             alt="Amy Plante reviewing real estate documents at her laptop"
