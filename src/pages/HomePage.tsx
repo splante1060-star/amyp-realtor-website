@@ -1,3 +1,5 @@
+import "../styles/home.css";
+
 import HeroSection from "./../components/home/HeroSection";
 import RealEstatePersonalSection from "./../components/home/RealEstatePersonalSection";
 import AboutAmySection from "./../components/home/AboutAmySection";

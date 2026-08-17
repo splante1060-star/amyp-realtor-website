@@ -1,0 +1,1099 @@
+/* =========================================================
+   HOMEPAGE -- HERO, PERSONAL REAL ESTATE, ABOUT AMY,
+    TESTIMONIALS, FEATURED SALES, FINAL CTA
+   ========================================================= */
+
+/* ========= HERO ========= */
+.hero-section {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  align-items: start;
+  gap: clamp(3rem, 6vw, 6rem);
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-content h1 {
+  margin-bottom: var(--space-lg);
+
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(3.5rem, 5vw, 5.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.hero-copy {
+  max-width: 620px;
+  margin-bottom: 2rem;
+
+  color: var(--color-text-soft);
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-search-link {
+  margin-left: 0.25rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    color var(--transition),
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-search-link:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.hero-mobile-image {
+  display: none;
+}
+
+.hero-desktop-image {
+  display: block;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.hero-image-caption {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 0.9rem;
+}
+
+.hero-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+}
+
+.hero-title {
+  margin-top: 0.2rem;
+
+  color: var(--color-text-soft);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ========= PERSONAL REAL ESTATE ========= */
+.real-estate-personal {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-section-red);
+  color: #f8f5ef;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.real-estate-personal::before {
+  content: "HOME";
+  position: absolute;
+  left: 50%;
+  bottom: -0.22em;
+  transform: translateX(-50%);
+
+  font-family: var(--font-heading);
+  font-size: clamp(12rem, 27vw, 28rem);
+  font-weight: 400;
+  line-height: 0.7;
+  letter-spacing: -0.06em;
+
+  color: rgba(248, 245, 239, 0.035);
+  opacity: 0.65;
+
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.real-estate-personal-inner {
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+  min-height: 520px;
+  padding: 3.5rem 0;
+
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 7rem;
+  align-items: start;
+}
+
+.real-estate-personal-intro {
+  max-width: 600px;
+  padding-top: 1rem;
+}
+
+.real-estate-personal h2 {
+  margin: 0 0 1.75rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.real-estate-personal-intro p {
+  max-width: 520px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(248, 245, 239, 0.82);
+}
+
+.real-estate-personal-statement {
+  align-self: end;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  max-width: 430px;
+
+  position: relative;
+  top: -30px;
+}
+
+.real-estate-personal-statement p {
+  max-width: 420px;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+  line-height: 1.08;
+}
+
+/* ========= ABOUT AMY ========= */
+.about-amy-section {
+  padding: 4.5rem 0;
+  background: var(--color-background);
+}
+
+.about-amy-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: clamp(4rem, 7vw, 8rem);
+  align-items: center;
+}
+
+.about-amy-image-wrapper {
+  width: 100%;
+}
+
+.about-amy-image {
+  display: block;
+  width: 100%;
+  height: min(720px, 72vw);
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.about-amy-content {
+  padding-top: 1rem;
+}
+
+.about-amy-content h2 {
+  max-width: 680px;
+  margin: 0 0 2rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
+}
+
+.about-amy-copy {
+  max-width: 680px;
+}
+
+.about-amy-copy p {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+
+  color: var(--color-text-muted);
+}
+
+.about-amy-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-amy-recognition {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+
+  border-top: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
+}
+
+.about-amy-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  padding: 1.25rem 1.25rem 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-amy-stat:nth-child(even) {
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--color-border);
+}
+
+.about-amy-stat strong {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-text);
+}
+
+.about-amy-award-icon {
+  font-size: 1.5rem !important;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.about-amy-stat span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-text-muted);
+}
+
+/* ========= TESTIMONIALS ========= */
+.testimonial-section {
+  padding: var(--space-3xl) 0 3rem;
+  background: var(--color-background);
+}
+
+.testimonial-container {
+  width: min(calc(100% - 4rem), var(--container-width));
+  margin-inline: auto;
+}
+
+.testimonial-header {
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.testimonial-header h2 {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.testimonial-header p {
+  margin: 0 auto;
+
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  padding: 2rem;
+
+  background: #f7f3ee;
+  border: 1px solid rgba(66, 13, 9, 0.08);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial + .testimonial {
+  border-left: 1px solid var(--color-border);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.12rem;
+  margin-bottom: 1.4rem;
+
+  color: var(--color-accent);
+}
+
+.testimonial-stars svg {
+  font-size: 1.15rem;
+  color: #fdcc0d;
+}
+
+.testimonial blockquote {
+  margin: 1.4rem 0 0;
+}
+
+.testimonial blockquote p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text);
+}
+
+.testimonial-client {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.testimonial-client strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.testimonial-client span {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+
+/* ========= FEATURED SALES ========= */
+.featured-sales-section {
+  padding: 3rem 0 4rem;
+  background: var(--color-background);
+}
+
+.featured-sales-container {
+  width: min(calc(100% - 4rem), var(--container-width));
+  margin-inline: auto;
+}
+
+.featured-sales-header {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.featured-sales-header h2 {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
+}
+
+.featured-sales-header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.65;
+
+  color: var(--color-text-muted);
+}
+
+.featured-sales-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 3.5rem;
+}
+
+.featured-sale {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-sale-image-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  aspect-ratio: 4 / 3;
+  background: #eee9e3;
+}
+
+.featured-sale-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.featured-sale-info {
+  padding-top: 0.75rem;
+}
+
+.featured-sale-info h3 {
+  margin: 0 0 0.3rem;
+
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.1;
+
+  color: var(--color-text);
+}
+
+.featured-sale-price {
+  margin: 0 0 0.3rem;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: var(--color-text-muted);
+}
+
+.featured-sale-price strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.featured-sale-detail {
+  display: inline-block;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+/* ========= FINAL CTA ========= */
+.final-cta-section {
+  padding: 3rem 0;
+  background: var(--color-section-red);
+}
+
+.final-cta-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+  gap: clamp(4rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.final-cta-image-wrapper {
+  width: 100%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.final-cta-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.final-cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-self: stretch;
+  padding: clamp(3rem, 5vw, 5rem);
+
+  background: var(--color-section-red);
+}
+
+.final-cta-content h2 {
+  margin: 0 0 1.5rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4vw, 4.4rem);
+  color: var(--color-background);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.final-cta-content p {
+  max-width: 590px;
+  margin: 0 0 2rem;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(248, 246, 241, 0.82);
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.final-cta-primary,
+.final-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0.85rem 1.4rem;
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-primary {
+  background: var(--color-background);
+  border: 1px solid var(--color-background);
+  color: var(--color-section-red);
+}
+
+.final-cta-primary:hover {
+  transform: translateY(-2px);
+}
+
+.final-cta-secondary {
+  background: transparent;
+  border: 1px solid var(--color-background);
+  color: var(--color-background);
+}
+
+.final-cta-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.final-cta-contact {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+
+  border-top: 1px solid rgba(248, 246, 241, 0.3);
+}
+
+.final-cta-contact span {
+  color: rgba(248, 246, 241, 0.82);
+}
+
+.final-cta-contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+.final-cta-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.final-cta-name strong {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-background);
+}
+
+.final-cta-name span {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  color: rgba(248, 246, 241, 0.8);
+}
+
+.final-cta-save-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+
+  padding: 0.65rem 0.9rem;
+
+  border: 1px solid rgba(248, 246, 241, 0.45);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  color: var(--color-background);
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-save-contact svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.final-cta-save-contact:hover {
+  background: rgba(248, 246, 241, 0.1);
+  border-color: rgba(248, 246, 241, 0.8);
+  transform: translateY(-2px);
+}
+
+.final-cta-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+
+  margin-bottom: 1rem;
+}
+
+.final-cta-contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+
+  color: rgba(248, 246, 241, 0.85);
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-contact-links a:hover {
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.final-cta-contact-links svg {
+  flex-shrink: 0;
+
+  width: 1.15rem;
+  height: 1.15rem;
+
+  color: var(--color-background);
+}
+
+.final-cta-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.final-cta-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-background);
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.final-cta-socials a:hover {
+  transform: translateY(-2px);
+}
+
+.final-cta-socials svg {
+  font-size: 2.25rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 768px) {
+  /* HOMEPAGE - HERO */
+  .hero-section {
+    padding-top: 2.5rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .eyebrow {
+    text-align: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    white-space: nowrap;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.75rem, 10vw, 4.2rem);
+    line-height: 1;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 0.5rem;
+    grid-row: 2;
+  }
+
+  .hero-mobile-image {
+    display: block;
+    margin: 1.25rem 0 2rem;
+  }
+
+  .hero-desktop-image {
+    display: none;
+  }
+
+  .hero-mobile-image .hero-image {
+    width: 100%;
+    max-height: 620px;
+
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 28%;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-search-link {
+    margin: 0.5rem 0 0;
+
+    text-align: center;
+  }
+
+  /* HOMEPAGE - PERSONAL REAL ESTATE */
+  .real-estate-personal-inner {
+    width: calc(100% - 3rem);
+    min-height: auto;
+    padding: 2rem 0;
+
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .real-estate-personal h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .real-estate-personal-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .real-estate-personal::before {
+    font-size: clamp(8rem, 34vw, 11rem);
+    letter-spacing: -0.06em;
+    white-space: nowrap;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.1em;
+  }
+
+  .real-estate-personal-statement {
+    padding: 0 0 0 1.5rem;
+    border-left: 2px solid rgba(248, 245, 239, 0.55);
+  }
+
+  .real-estate-personal-statement p {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  /* HOMEPAGE - ABOUT AMY */
+  .about-amy-section {
+    padding: 5rem 0 2.5rem;
+  }
+
+  .about-amy-container {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .about-amy-image {
+    height: auto;
+    max-height: 620px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+
+  .about-amy-content {
+    padding-top: 0;
+  }
+
+  .about-amy-content h2 {
+    margin-bottom: 2rem;
+
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+  }
+
+  .about-amy-copy p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .about-amy-recognition {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
+
+  .about-amy-stat,
+  .about-amy-stat:nth-child(even) {
+    padding: 1.25rem 0;
+    border-left: 0;
+  }
+
+  .about-amy-stat strong {
+    font-size: 2.25rem;
+  }
+
+  /* HOMEPAGE - TESTIMONIAL */
+  .testimonial-section {
+    padding: 2.5rem 0 2.5rem;
+  }
+
+  .testimonial-container {
+    width: calc(100% - 3rem);
+  }
+
+  .testimonial-header {
+    margin: 0 0 2.5rem;
+    text-align: left;
+  }
+
+  .testimonial-header h2 {
+    margin: 0 0 1.5rem;
+
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+
+    color: var(--color-text);
+  }
+
+  .testimonial-header p {
+    margin: 0;
+    max-width: 100%;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    color: var(--color-text-muted);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .testimonial {
+    width: 100%;
+    min-height: auto;
+    padding: 1.75rem;
+    border-radius: 14px;
+  }
+
+  .testimonial blockquote p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .testimonial-client {
+    padding-top: 1.5rem;
+  }
+
+  .testimonial-stars {
+    flex-wrap: nowrap;
+    margin-bottom: 1.25rem;
+  }
+
+  .testimonial-stars svg {
+    font-size: 1.05rem;
+  }
+
+  /* HOMEPAGE - FEATURED SALES */
+  .featured-sales-section {
+    padding: 2.5rem 0;
+  }
+
+  .featured-sales-container {
+    width: calc(100% - 3rem);
+  }
+
+  .featured-sales-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .featured-sales-header h2 {
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+  }
+
+  .featured-sales-header p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .featured-sales-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featured-sale-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .featured-sale-info h3 {
+    font-size: 1.4rem;
+  }
+
+  /* HOMEPAGE - FINAL CTA */
+  .final-cta-section {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .final-cta-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .final-cta-image {
+    aspect-ratio: 4 / 5;
+    object-position: center 20%;
+  }
+
+  .final-cta-content {
+    max-width: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .final-cta-content h2 {
+    margin: 0 0 1.25rem;
+
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: 1.03;
+  }
+
+  .final-cta-content p {
+    margin-bottom: 1.75rem;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .final-cta-primary,
+  .final-cta-secondary {
+    width: 100%;
+  }
+
+  .final-cta-contact {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    text-align: left;
+  }
+
+  .final-cta-name {
+    align-items: center;
+  }
+
+  .final-cta-contact-links {
+    align-items: center;
+  }
+
+  .final-cta-socials {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
