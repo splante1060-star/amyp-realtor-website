@@ -32,14 +32,34 @@ export default function BuyerExperienceSection() {
             <p className="buyer-experience-lead">
               A clear plan from search to closing.
             </p>
+          </div>
 
-            <p className="buyer-experience-copy">
-              Buying a home comes with a lot of moving pieces. Amy helps you
-              understand the market, anticipate what comes next, and make
-              confident decisions without feeling rushed through the process.
-            </p>
+          <div className="buyer-experience-actions buyer-experience-actions-desktop">
+            <a
+              href="https://amyplante.kw.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="buyer-experience-primary"
+            >
+              Search Homes <span aria-hidden="true">→</span>
+            </a>
+
+            <a
+              href="https://calendly.com/amyplanterealtor"
+              target="_blank"
+              rel="noreferrer"
+              className="buyer-experience-secondary"
+            >
+              Book a Consultation <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
+
+        <p className="buyer-experience-copy">
+          Buying a home comes with a lot of moving pieces. Amy helps you
+          understand the market, anticipate what comes next, and make confident
+          decisions without feeling rushed through the process.
+        </p>
 
         <div className="buyer-experience-steps">
           {buyerSteps.map((step) => (
@@ -54,7 +74,7 @@ export default function BuyerExperienceSection() {
           ))}
         </div>
 
-        <div className="buyer-experience-actions">
+        <div className="buyer-experience-actions buyer-experience-actions-mobile">
           <a
             href="https://amyplante.kw.com/"
             target="_blank"

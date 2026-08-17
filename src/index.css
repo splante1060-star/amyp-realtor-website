@@ -1303,7 +1303,7 @@ section {
 
 /* =========================================================
    9. BUY OR SELL -- HERO, INTRO, BUYER EXPERIENCE,
-    LISTING INSIGHT
+    LISTING INSIGHT, SELLER EXPERIENCE
    ========================================================= */
 /* Hero */
 .buy-sell-hero {
@@ -1503,7 +1503,16 @@ section {
 }
 
 .buyer-experience-header {
-  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+
+  margin: 0 0 1rem;
+}
+
+.buyer-experience-intro {
+  max-width: 650px;
 }
 
 .buyer-experience-intro h2 {
@@ -1530,39 +1539,32 @@ section {
   color: var(--color-background);
 }
 
-.buyer-experience-copy {
-  margin: 1.5rem 0 0;
-
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  line-height: 1.75;
-
-  color: rgba(248, 246, 241, 0.82);
-}
-
 .buyer-experience-actions {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 2rem 0 0;
+
+  flex-shrink: 0;
+  margin-top: 1.1rem;
+  padding-bottom: 0;
 }
 
 .buyer-experience-primary,
 .buyer-experience-secondary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.65rem;
 
-  min-height: 48px;
-  padding: 0.85rem 1.4rem;
+  min-height: 46px;
+  padding: 0.8rem 1.35rem;
 
   font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: var(--color-background);
   text-decoration: none;
 
   transition:
@@ -1597,6 +1599,17 @@ section {
 
 .buyer-experience-actions a:hover span {
   transform: translateX(4px);
+}
+
+.buyer-experience-copy {
+  max-width: 1000px;
+  margin: 2rem 0 4rem;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: rgba(248, 246, 241, 0.82);
 }
 
 .buyer-experience-steps {
@@ -1643,6 +1656,10 @@ section {
   line-height: 1.7;
 
   color: rgba(248, 246, 241, 0.78);
+}
+
+.buyer-experience-actions-mobile {
+  display: none;
 }
 
 /* Listing Insight */
@@ -1727,6 +1744,179 @@ section {
 
   object-fit: cover;
   object-position: center;
+}
+
+/* Seller Experience */
+.seller-experience-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.seller-experience-container {
+  max-width: 1120px;
+}
+
+.seller-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+
+  margin: 0 0 1rem;
+}
+
+.seller-experience-intro {
+  max-width: 650px;
+}
+
+.seller-experience-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.seller-experience-lead {
+  margin: 2rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.seller-experience-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  flex-shrink: 0;
+  margin-top: 1.1rem;
+  padding-bottom: 0;
+}
+
+.seller-experience-primary,
+.seller-experience-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+
+  min-height: 46px;
+  padding: 0.8rem 1.35rem;
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.seller-experience-primary {
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+
+  color: var(--color-background);
+}
+
+.seller-experience-primary:hover {
+  transform: translateY(-2px);
+}
+
+.seller-experience-secondary {
+  background: transparent;
+  border: 1px solid var(--color-accent);
+
+  color: var(--color-accent);
+}
+
+.seller-experience-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.seller-experience-actions a span {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.seller-experience-actions a:hover span {
+  transform: translateX(4px);
+}
+
+.seller-experience-copy {
+  max-width: 1000px;
+  margin: 2rem 0 4rem;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.seller-experience-steps {
+  border-top: 1px solid var(--color-border);
+}
+
+.seller-experience-step {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+
+  padding: 2.25rem 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.seller-experience-number {
+  font-family: var(--font-heading);
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: rgba(128, 0, 0, 0.26);
+}
+
+.seller-experience-step-content h3 {
+  margin: 0 0 0.65rem;
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.seller-experience-step-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
+.seller-experience-actions-mobile {
+  display: none;
 }
 
 /* =========================================================
@@ -2389,7 +2579,25 @@ section {
 
   /* BUY OR SELL - BUYER EXPERIENCE */
   .buyer-experience-section {
-    padding: 5rem 0;
+    display: block;
+  }
+
+  .buyer-experience-actions-desktop {
+    display: none;
+  }
+
+  .buyer-experience-actions-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+
+    margin-top: 2rem;
+  }
+
+  .buyer-experience-actions-mobile a {
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .buyer-experience-header {
@@ -2407,18 +2615,9 @@ section {
   }
 
   .buyer-experience-copy {
-    margin-top: 1.25rem;
-
+    margin: 2.5rem 0 2rem;
     font-size: 1rem;
     line-height: 1.7;
-  }
-
-  .buyer-experience-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-
-    margin-top: 2rem;
   }
 
   .buyer-experience-step {
@@ -2484,5 +2683,70 @@ section {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
+  }
+
+  /* BUY OR SELL - SELLER EXPERIENCE */
+  .seller-exoerience-header {
+    display: block;
+  }
+
+  .seller-experience-actions-desktop {
+    display: none;
+  }
+
+  .seller-experience-actions-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+
+    margin-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  .seller-experience-actions-mobile a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .seller-experience-primary,
+  .seller-experience-secondary {
+    width: 100%;
+  }
+
+  .seller-experience-intro h2 {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: 1.05;
+  }
+
+  .seller-experience-lead {
+    line-height: 1.5;
+  }
+
+  .seller-experience-copy {
+    margin: 2.5rem 0 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .seller-experience-step {
+    grid-template-columns: 65px 1fr;
+    gap: 1.25rem;
+
+    padding: 2rem 0;
+  }
+
+  .seller-experience-number {
+    font-size: 2.8rem;
+  }
+
+  .seller-experience-step-content h3 {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .seller-experience-step-content p {
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 }
