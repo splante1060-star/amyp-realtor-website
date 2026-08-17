@@ -812,6 +812,42 @@
   transform: translateX(3px);
 }
 
+/* ========= CLOSING STATEMENT ========= */
+.buy-sell-closing {
+  padding: 3.5rem 0;
+
+  background: var(--color-section-red);
+}
+
+.buy-sell-closing-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.buy-sell-closing p {
+  max-width: 750px;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: rgba(248, 246, 241, 0.75);
+}
+
+.buy-sell-closing p span {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  font-size: clamp(1.75rem, 3.5vw, 4rem);
+  line-height: 1.15;
+
+  color: var(--color-background);
+}
+
 /* =========================================================
    RESPONSIVE
    ========================================================= */
@@ -1151,5 +1187,22 @@
     margin-top: 2rem;
     padding-top: 1.25rem;
     padding-top: 1.25rem;
+  }
+
+  /* ========= CLOSING STATEMENT ========= */
+  .buy-sell-closing {
+    padding: 3rem 0;
+  }
+
+  .buy-sell-closing p {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+
+  .buy-sell-closing p span {
+    margin-top: 0.5rem;
+
+    font-size: clamp(2rem, 7vw, 2.75rem);
+    line-height: 1.15;
   }
 }

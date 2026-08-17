@@ -17,9 +17,9 @@ export default function BuySellHeroSection() {
 
           <p>
             Whether you're searching for the right home or preparing to sell
-            one, Amy brings more than 24 years of experience, local market
-            knowledge, and straightforward guidance to help you make the right
-            move.
+            one, Amy brings more than 24 years of experience, market knowledge
+            across Massachusetts, Rhode Island, and Florida, and straightforward
+            guidance to every step.
           </p>
 
           <div className="buy-sell-hero-actions">
