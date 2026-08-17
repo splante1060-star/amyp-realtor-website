@@ -1202,25 +1202,25 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
   padding-top: 1.75rem;
-
   border-top: 1px solid var(--color-border);
+}
 
+.footer-brokerage-logo {
+  width: 135px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  font-size: 0.8rem;
   color: var(--color-text-soft);
-
-  font-size: 0.78rem;
-  text-align: center;
-}
-
-.footer-bottom p {
-  margin: 0;
-}
-
-.footer-bottom p + p::before {
-  content: "·";
-  margin-right: 1rem;
 }
 
 .footer-contact {
@@ -1825,16 +1825,22 @@ section {
 
   .footer-bottom {
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 1rem;
 
-    padding-top: 1.5rem;
-
-    font-size: 0.7rem;
-    line-height: 1.5;
+    text-align: center;
   }
 
-  .footer-bottom p + p::before {
-    content: none;
+  .footer-brokerage-logo {
+    width: 125px;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .footer-dot {
+    display: none;
   }
 
   .footer-contact {

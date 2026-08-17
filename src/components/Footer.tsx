@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import amyLogo from "../assets/Plante Realty Logo-US.png";
+import kwLogo from "../assets/kw.png";
 
 export default function Footer() {
   const location = useLocation();
@@ -126,12 +127,17 @@ export default function Footer() {
         )}
 
         <div className="footer-bottom">
-          <p>
-            {" "}
-            © {new Date().getFullYear()} Amy Plante · Keller Williams Elite{" "}
-          </p>
+          <img
+            src={kwLogo}
+            alt="Keller Williams Elite"
+            className="footer-brokerage-logo"
+          />
 
-          <p>Licensed in Massachusetts, Rhode Island & Florida</p>
+          <div className="footer-legal">
+            <span>© 2026 Amy Plante</span>
+            <span className="footer-dot">·</span>
+            <span>Licensed in Massachusetts, Rhode Island & Florida</span>
+          </div>
         </div>
       </div>
     </footer>
