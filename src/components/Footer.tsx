@@ -38,6 +38,10 @@ export default function Footer() {
               Book Consultation
             </a>
 
+            <a href="/amy-plante.vcf" download="Amy-Plante.vcf">
+              Save Amy to Contacts
+            </a>
+
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdll0M9XLlYdAixN-NEPm8NcwoIEK6ET8GmPmHQNbVsiYDItQ/viewform"
               target="_blank"

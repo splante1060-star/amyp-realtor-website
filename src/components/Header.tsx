@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import OtherHousesOutlinedIcon from "@mui/icons-material/OtherHousesOutlined";
@@ -57,6 +58,10 @@ export default function Header() {
                 >
                   <CalendarMonthOutlinedIcon />
                   <span>Book Consultation</span>
+                </a>
+                <a href="/amy-plante.vcf" download="Amy-Plante.vcf">
+                  <PersonAddAltOutlinedIcon />
+                  <span>Save Amy to Contacts</span>
                 </a>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdll0M9XLlYdAixN-NEPm8NcwoIEK6ET8GmPmHQNbVsiYDItQ/viewform"
@@ -147,7 +152,10 @@ export default function Header() {
                   <CalendarMonthOutlinedIcon />
                   <span>Book Consultation</span>
                 </a>
-
+                <a href="/amy-plante.vcf" download="Amy-Plante.vcf">
+                  <PersonAddAltOutlinedIcon />
+                  <span>Save Amy to Contacts</span>
+                </a>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdll0M9XLlYdAixN-NEPm8NcwoIEK6ET8GmPmHQNbVsiYDItQ/viewform"
                   target="_blank"
@@ -156,7 +164,6 @@ export default function Header() {
                   <HomeOutlinedIcon />
                   <span>Get Your Home Value</span>
                 </a>
-
                 <a
                   href="https://amyplante.kw.com/"
                   target="_blank"
@@ -165,7 +172,6 @@ export default function Header() {
                   <SearchRoundedIcon />
                   <span>Search Homes</span>
                 </a>
-
                 <a
                   href="https://www.zillow.com/profile/amyplante"
                   target="_blank"
@@ -174,7 +180,6 @@ export default function Header() {
                   <OtherHousesOutlinedIcon />
                   <span>Zillow Profile & Reviews</span>
                 </a>
-
                 <a
                   href="https://g.page/r/CQilLLeWg4U_EBM/review"
                   target="_blank"

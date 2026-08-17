@@ -1,5 +1,6 @@
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
+import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -41,9 +42,20 @@ export default function FinalCTASection() {
           </div>
 
           <div className="final-cta-contact">
-            <div className="final-cta-name">
-              <strong>Amy Plante</strong>
-              <span>REALTOR® · MA · RI · FL</span>
+            <div className="final-cta-contact-header">
+              <div className="final-cta-name">
+                <strong>Amy Plante</strong>
+                <span>REALTOR® · MA · RI · FL</span>
+              </div>
+
+              <a
+                href="/amy-plante.vcf"
+                download="Amy-Plante.vcf"
+                className="final-cta-save-contact"
+              >
+                <PersonAddAltOutlinedIcon />
+                <span>SAVE CONTACT</span>
+              </a>
             </div>
 
             <div className="final-cta-contact-links">
