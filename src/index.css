@@ -4,7 +4,7 @@
    1. GENERAL DESIGN 
    ========================================================= */
 :root {
-  --color-background: #f8f6f1;
+  --color-background: #fbfaf7;
   --color-surface: #ffffff;
   --color-text: #272522;
   --color-text-soft: #6d6861;
@@ -1303,7 +1303,7 @@ section {
 
 /* =========================================================
    9. BUY OR SELL -- HERO, INTRO, BUYER EXPERIENCE,
-    LISTING INSIGHT, SELLER EXPERIENCE
+    LISTING INSIGHT, SELLER EXPERIENCE, PREP CALLOUT
    ========================================================= */
 /* Hero */
 .buy-sell-hero {
@@ -1917,6 +1917,86 @@ section {
 
 .seller-experience-actions-mobile {
   display: none;
+}
+
+/* Prep to Sell Callout */
+.prep-callout-section {
+  padding: 5rem 0;
+
+  background: var(--color-surface);
+}
+
+.prep-callout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.prep-callout-content {
+  max-width: 720px;
+}
+
+.prep-callout-content h2 {
+  margin: 0 0 1.25rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 4vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.prep-callout-content p {
+  max-width: 650px;
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.prep-callout-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+
+  padding-bottom: 0.4rem;
+
+  border-bottom: 1px solid var(--color-accent);
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.prep-callout-link svg {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.prep-callout-link:hover {
+  opacity: 0.75;
+}
+
+.prep-callout-link:hover svg {
+  transform: translateX(4px);
 }
 
 /* =========================================================
@@ -2748,5 +2828,32 @@ section {
   .seller-experience-step-content p {
     font-size: 0.95rem;
     line-height: 1.65;
+  }
+
+  /* BUY OR SELL - PREP CALLOUT */
+  .prep-callout-section {
+    padding: 4rem 0;
+  }
+
+  .prep-callout-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .prep-callout-content h2 {
+    margin-bottom: 1.25rem;
+
+    font-size: clamp(2.5rem, 11vw, 3.25rem);
+    line-height: 1.03;
+  }
+
+  .prep-callout-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .prep-callout-link {
+    font-size: 0.75rem;
   }
 }

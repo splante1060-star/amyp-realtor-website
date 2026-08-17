@@ -3,6 +3,7 @@ import BuySellIntroSection from "../components/buy-or-sell/BuySellIntroSection";
 import BuyerExperienceSection from "../components/buy-or-sell/BuyerExperienceSection";
 import ListingInsightSection from "../components/buy-or-sell/ListingInsightSection";
 import SellerExperienceSection from "../components/buy-or-sell/SellerExperienceSection";
+import PrepToSellCallout from "../components/buy-or-sell/PrepToSellCallout";
 
 export default function BuyOrSellPage() {
   return (
@@ -12,6 +13,7 @@ export default function BuyOrSellPage() {
       <BuyerExperienceSection />
       <ListingInsightSection />
       <SellerExperienceSection />
+      <PrepToSellCallout />
     </div>
   );
 }
