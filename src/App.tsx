@@ -5,6 +5,7 @@ import AboutAmySection from "./components/home/AboutAmySection";
 import TestimonialSection from "./components/home/TestimonialSection";
 import FeaturedSalesSection from "./components/home/FeaturedSalesSection";
 import FinalCTASection from "./components/home/FinalCTASection";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <TestimonialSection />
       <FeaturedSalesSection />
       <FinalCTASection />
+      <Footer />
     </div>
   );
 }
