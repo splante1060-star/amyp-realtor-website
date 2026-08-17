@@ -1,22 +1,37 @@
+import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
-import HeroSection from "./components/home/HeroSection";
-import RealEstatePersonalSection from "./components/home/RealEstatePersonalSection";
-import AboutAmySection from "./components/home/AboutAmySection";
-import TestimonialSection from "./components/home/TestimonialSection";
-import FeaturedSalesSection from "./components/home/FeaturedSalesSection";
-import FinalCTASection from "./components/home/FinalCTASection";
 import Footer from "./components/Footer";
+
+import HomePage from "./pages/HomePage";
+import BuyOrSellPage from "./pages/BuyOrSellPage";
+import DivorceRealEstatePage from "./pages/DivorceRealEstatePage";
+import PrepToSellPage from "./pages/PrepToSellPage";
+import EstateSalesDownsizingPage from "./pages/EstateSalesDownsizingPage";
+import AirbnbInvestmentPage from "./pages/AirbnbInvestmentPage";
 
 export default function App() {
   return (
     <div>
       <Header />
-      <HeroSection />
-      <RealEstatePersonalSection />
-      <AboutAmySection />
-      <TestimonialSection />
-      <FeaturedSalesSection />
-      <FinalCTASection />
+
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/buy-or-sell" element={<BuyOrSellPage />} />
+          <Route
+            path="/divorce-real-estate"
+            element={<DivorceRealEstatePage />}
+          />
+          <Route path="/prep-to-sell" element={<PrepToSellPage />} />
+          <Route
+            path="/estate-sales-downsizing"
+            element={<EstateSalesDownsizingPage />}
+          />
+          <Route path="/airbnb-investment" element={<AirbnbInvestmentPage />} />
+        </Routes>
+      </main>
+
       <Footer />
     </div>
   );
