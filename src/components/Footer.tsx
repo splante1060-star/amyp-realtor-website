@@ -74,6 +74,27 @@ export default function Footer() {
               Leave a Review
             </a>
           </div>
+
+          {/* <div className="footer-newsletter">
+            <span className="footer-newsletter-title">Stay Connected</span>
+
+            <p>
+              Subscribe to Home & Harmony for real estate insights, market
+              updates, and lifestyle tips delivered straight to your inbox.
+            </p>
+
+            <button
+              type="button"
+              className="footer-newsletter-link"
+              onClick={() => {
+                window.fd?.("form", {
+                  formId: "675b30b8170efb5ad611c2da",
+                });
+              }}
+            >
+              Join the Newsletter <span aria-hidden="true">→</span>
+            </button>
+          </div> */}
         </div>
 
         {!isHomePage && (

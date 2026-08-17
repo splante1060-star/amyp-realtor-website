@@ -1136,8 +1136,9 @@ section {
 
 .footer-main {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: clamp(4rem, 8vw, 8rem);
+  grid-template-columns: 0.9fr 1fr 1.25fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
 
   padding: 0 0 3rem;
   border-bottom: 1px solid var(--color-border);
