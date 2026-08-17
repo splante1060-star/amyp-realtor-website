@@ -54,7 +54,7 @@ export default function BuyerExperienceSection() {
               target="_blank"
               rel="noreferrer"
             >
-              Book a Buyer Consultation <span aria-hidden="true">→</span>
+              Book a Consultation <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
