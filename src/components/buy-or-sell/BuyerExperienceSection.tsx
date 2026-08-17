@@ -39,24 +39,6 @@ export default function BuyerExperienceSection() {
               confident decisions without feeling rushed through the process.
             </p>
           </div>
-
-          <div className="buyer-experience-actions">
-            <a
-              href="https://amyplante.kw.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Search Homes <span aria-hidden="true">→</span>
-            </a>
-
-            <a
-              href="https://calendly.com/amyplanterealtor"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Book a Consultation <span aria-hidden="true">→</span>
-            </a>
-          </div>
         </div>
 
         <div className="buyer-experience-steps">
@@ -70,6 +52,26 @@ export default function BuyerExperienceSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="buyer-experience-actions">
+          <a
+            href="https://amyplante.kw.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="buyer-experience-primary"
+          >
+            Search Homes <span aria-hidden="true">→</span>
+          </a>
+
+          <a
+            href="https://calendly.com/amyplanterealtor"
+            target="_blank"
+            rel="noreferrer"
+            className="buyer-experience-secondary"
+          >
+            Book a Consultation <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>

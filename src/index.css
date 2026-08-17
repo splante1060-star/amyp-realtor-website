@@ -1547,10 +1547,14 @@ section {
   margin: 2rem 0 0;
 }
 
-.buyer-experience-actions a {
+.buyer-experience-primary,
+.buyer-experience-secondary {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
+
+  min-height: 48px;
+  padding: 0.85rem 1.4rem;
 
   font-family: var(--font-body);
   font-size: 0.85rem;
@@ -1566,22 +1570,29 @@ section {
     opacity 0.2s ease;
 }
 
-.buyer-experience-actions a:first-child {
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(248, 246, 241, 0.65);
+.buyer-experience-primary {
+  background: var(--color-background);
+  border: 1px solid var(--color-background);
+  color: var(--color-section-red);
 }
 
-.buyer-experience-actions a:last-child {
-  color: rgba(248, 246, 241, 0.72);
+.buyer-experience-primary:hover {
+  transform: translateY(-2px);
+}
+
+.buyer-experience-secondary {
+  background: transparent;
+  border: 1px solid var(--color-background);
+  color: var(--color-background);
+}
+
+.buyer-experience-secondary:hover {
+  transform: translateY(-2px);
 }
 
 .buyer-experience-actions a span {
   font-size: 1rem;
   transition: transform 0.2s ease;
-}
-
-.buyer-experience-actions a:hover {
-  opacity: 0.75;
 }
 
 .buyer-experience-actions a:hover span {
