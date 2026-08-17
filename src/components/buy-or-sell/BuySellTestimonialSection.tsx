@@ -55,7 +55,7 @@ export default function BuySellTestimonialSection() {
         </blockquote>
 
         <div className="buy-sell-testimonial-attribution">
-          <strong>Buyer & Seller · Attleboro, MA</strong>
+          <strong>Paul W. • Buyer & Seller • Attleboro, MA</strong>
 
           <a
             href="https://www.zillow.com/profile/amyplante"

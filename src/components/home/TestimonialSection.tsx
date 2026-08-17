@@ -14,7 +14,7 @@ const testimonials = [
   {
     quote: `"Amy is the best! Very knowledgeable, organized and extremely responsive. One of her greatest traits is that she stays calm under pressure taking the stress out of the home buying/selling process. Having been in the industry for many years her knowledge of real estate and of the area and is a big plus. I would recommend Amy to anyone looking to purchase or sell with ease and success!"`,
     from: "Lisa R.",
-    context: "Seller & Buyer",
+    context: "Buyer & Seller",
   },
 ];
 
