@@ -9,7 +9,7 @@ const sellerSteps = [
     number: "02",
     title: "Prepare",
     description:
-      "Determine what actually needs to be done before listing, and what doesn't.",
+      "Determine what actually needs to be done before listing — and what doesn't.",
   },
   {
     number: "03",
