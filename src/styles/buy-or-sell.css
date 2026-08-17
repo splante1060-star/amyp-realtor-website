@@ -816,7 +816,7 @@
    RESPONSIVE
    ========================================================= */
 @media (max-width: 768px) {
-  /* BUY OR SELL - HERO */
+  /* ========= HERO ========= */
   .buy-sell-hero {
     padding: 2.5rem 0 3rem;
   }
@@ -863,7 +863,7 @@
     object-position: center 25%;
   }
 
-  /* BUY OR SELL - INTRO */
+  /* ========= INTRO ========= */
   .buy-sell-intro {
     padding: 3.5rem 0;
   }
@@ -908,7 +908,7 @@
     line-height: 1.65;
   }
 
-  /* BUY OR SELL - BUYER EXPERIENCE */
+  /* ========= BUYER EXPERIENCE ========= */
   .buyer-experience-section {
     display: block;
   }
@@ -972,7 +972,7 @@
     line-height: 1.65;
   }
 
-  /* BUY OR SELL - LISTING INSIGHT */
+  /* ========= LISTING INSIGHT ========= */
   .listing-insight-section {
     padding: 4rem 0;
   }
@@ -1016,7 +1016,7 @@
     object-position: center;
   }
 
-  /* BUY OR SELL - SELLER EXPERIENCE */
+  /* ========= SELLER EXPERIENCE ========= */
   .seller-exoerience-header {
     display: block;
   }
@@ -1081,7 +1081,7 @@
     line-height: 1.65;
   }
 
-  /* BUY OR SELL - PREP CALLOUT */
+  /* ========= PREP TO SELL CALLOUT ========= */
   .prep-callout-section {
     padding: 4rem 0;
   }
@@ -1108,7 +1108,7 @@
     font-size: 0.75rem;
   }
 
-  /* BUY OR SELL - BUY / SELL TESTIMONIAL */
+  /* ========= BUY / SELL TESTIMONIAL ========= */
   .buy-sell-testimonial-section {
     padding: 4.5rem 0;
   }
