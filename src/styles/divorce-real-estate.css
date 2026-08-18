@@ -1,6 +1,7 @@
-/* ========================================
-   DIVORCE REAL ESTATE
-======================================== */
+/* =========================================================
+   DIVORCE REAL ESTATE -- HERO, DIVORCE APPROACH, DIVORCE
+    HOME DECISION
+   ========================================================= */
 
 /* ========= HERO ========= */
 .divorce-hero-section {
@@ -151,7 +152,7 @@
 
 .divorce-approach-header p {
   max-width: 500px;
-  margin: 0;
+  margin: 2rem;
 
   font-family: var(--font-body);
   font-size: 1.05rem;
@@ -238,6 +239,121 @@
   color: rgba(248, 246, 241, 0.76);
 }
 
+/* ========= DIVORCE HOME DECISION ========= */
+.divorce-home-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+}
+
+.divorce-home-container {
+  max-width: 1120px;
+}
+
+.divorce-home-intro {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.divorce-home-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.divorce-home-intro p {
+  margin: 2rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.divorce-home-options {
+  border-top: 1px solid var(--color-border);
+}
+
+.divorce-home-option {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+
+  padding: 2rem 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.divorce-home-number {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: rgba(128, 0, 0, 0.22);
+}
+
+.divorce-home-content h3 {
+  margin: 0 0 0.75rem;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.divorce-home-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
+.divorce-home-closing {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: start;
+
+  margin-top: 3rem;
+}
+
+.divorce-home-closing h3 {
+  max-width: 600px;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+
+  color: var(--color-text);
+}
+
+.divorce-home-closing p {
+  max-width: 520px;
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -300,7 +416,7 @@
 
   .divorce-approach-header {
     display: block;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 
   .divorce-approach-header h2 {
@@ -311,7 +427,10 @@
   }
 
   .divorce-approach-header > p {
+    margin-left: 0;
+    margin-right: 0;
     max-width: none;
+    width: 100%;
     margin-top: 2rem;
 
     font-size: 1rem;
@@ -359,5 +478,65 @@
 
   .divorce-approach-principle p {
     max-width: none;
+  }
+
+  /* ========= DIVORCE HOME DECISION ========= */
+  .divorce-home-section {
+    padding: 5rem 0;
+  }
+
+  .divorce-home-intro {
+    margin-bottom: 2rem;
+  }
+
+  .divorce-home-intro h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
+  .divorce-home-intro p {
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .divorce-home-option {
+    grid-template-columns: 58px 1fr;
+    gap: 1.25rem;
+
+    padding: 2.25rem 0;
+  }
+
+  .divorce-home-number {
+    font-size: 2.8rem;
+  }
+
+  .divorce-home-content h3 {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .divorce-home-content p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .divorce-home-closing {
+    display: block;
+
+    margin-top: 0.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .divorce-home-closing h3 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+    line-height: 1.2;
+  }
+
+  .divorce-home-closing p {
+    margin-top: 1.25rem;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 }
