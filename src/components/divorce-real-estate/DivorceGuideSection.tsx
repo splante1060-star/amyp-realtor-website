@@ -23,8 +23,8 @@ export default function DivorceGuideSection() {
           </p>
 
           <p>
-            Amy&apos;s free guide is designed to help you begin thinking through
-            the property, your options, and the information you may need as you
+            Amy's free guide is designed to help you begin thinking through the
+            property, your options, and the information you may need as you
             determine what comes next.
           </p>
 
