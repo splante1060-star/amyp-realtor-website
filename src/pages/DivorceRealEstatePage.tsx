@@ -5,6 +5,7 @@ import DivorceApproachSection from "../components/divorce-real-estate/DivorceApp
 import DivorceHomeDecisionSection from "../components/divorce-real-estate/DivorceHomeDecisionSection";
 import DivorceVestaSection from "../components/divorce-real-estate/DivorceVestaSection";
 import DivorceWorkingWithAmySection from "../components/divorce-real-estate/DivorceWorkingWithAmySection";
+import DivorceGuideSection from "../components/divorce-real-estate/DivorceGuideSection";
 
 export default function DivorceRealEstatePage() {
   return (
@@ -14,6 +15,7 @@ export default function DivorceRealEstatePage() {
       <DivorceHomeDecisionSection />
       <DivorceVestaSection />
       <DivorceWorkingWithAmySection />
+      <DivorceGuideSection />
     </div>
   );
 }
