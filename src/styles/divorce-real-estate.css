@@ -1,6 +1,6 @@
 /* =========================================================
    DIVORCE REAL ESTATE -- HERO, DIVORCE APPROACH, DIVORCE
-    HOME DECISION
+    HOME DECISION, WORKING WITH AMY
    ========================================================= */
 
 /* ========= HERO ========= */
@@ -503,6 +503,106 @@
   color: var(--color-accent);
 }
 
+/* ========= WORKING WITH AMY ========= */
+.divorce-working-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+}
+
+.divorce-working-container {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.divorce-working-visual {
+  align-self: center;
+}
+
+.divorce-working-visual img {
+  display: block;
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.divorce-working-content {
+  min-width: 0;
+}
+
+.divorce-working-intro {
+  margin: 0 0 2.25rem;
+}
+
+.divorce-working-intro h2 {
+  margin: 0 0 1.5rem;
+  max-width: 650px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.divorce-working-intro p {
+  margin: 0;
+  max-width: 650px;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.divorce-working-steps {
+  border-top: 1px solid var(--color-border);
+}
+
+.divorce-working-step {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 1.5rem;
+
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.divorce-working-number {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(128, 0, 0, 0.22);
+}
+
+.divorce-working-step-content h3 {
+  margin: 0 0 0.75rem;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.divorce-working-step-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -759,5 +859,65 @@
     grid-column: 1 / -1;
     padding-left: 0;
     border-left: 0;
+  }
+
+  /* ========= WORKING WITH AMY ========= */
+  .divorce-working-section {
+    padding: 3.5rem 0;
+  }
+
+  .divorce-working-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+  }
+
+  .divorce-working-visual {
+    position: static;
+    width: 100%;
+  }
+
+  .divorce-working-visual img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .divorce-working-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .divorce-working-intro h2 {
+    margin-bottom: 1.25rem;
+
+    font-size: clamp(3rem, 13vw, 4.25rem);
+    line-height: 0.98;
+  }
+
+  .divorce-working-intro p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .divorce-working-step {
+    grid-template-columns: 50px 1fr;
+    gap: 1rem;
+    padding: 1.75rem 0;
+  }
+
+  .divorce-working-number {
+    font-size: 2rem;
+  }
+
+  .divorce-working-step-content h3 {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .divorce-working-step-content p {
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 }
