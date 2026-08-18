@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import NewsletterPopup from "./components/NewsletterPopup";
+import ScrollToTop from "./components/ScrollToTop";
 
 import HomePage from "./pages/HomePage";
 import BuyOrSellPage from "./pages/BuyOrSellPage";
@@ -16,6 +17,8 @@ export default function App() {
   return (
     <div>
       <NewsletterPopup />
+
+      <ScrollToTop />
 
       <Header />
 
