@@ -654,6 +654,10 @@ section {
   text-transform: uppercase;
 
   pointer-events: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .before-after-before-label {
@@ -662,6 +666,19 @@ section {
 
 .before-after-after-label {
   right: 26px;
+}
+
+.before-after-label--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.before-after-before-label.before-after-label--hidden {
+  transform: translateX(-8px);
+}
+
+.before-after-after-label.before-after-label--hidden {
+  transform: translateX(8px);
 }
 
 /* Slider Hint Animation */

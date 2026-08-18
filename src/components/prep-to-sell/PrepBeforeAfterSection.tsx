@@ -1,10 +1,10 @@
 import BeforeAfterSlider from "../BeforeAfterSlider";
 
-import kitchenBefore from "../../assets/Before-Kitchen.jpg";
-import kitchenAfter from "../../assets/After-Kitchen.jpg";
-
 import livingBefore from "../../assets/Before-Living.jpg";
 import livingAfter from "../../assets/After-Living.jpg";
+
+import bedroomBefore from "../../assets/Before-Bedroom.jpg";
+import bedroomAfter from "../../assets/After-Bedroom.jpg";
 
 import basementBefore from "../../assets/Before-Basement.jpg";
 import basementAfter from "../../assets/After-Basement.jpg";
@@ -22,33 +22,10 @@ export default function PrepBeforeAfterSection() {
           </p>
         </div>
 
-        {/* Kitchen */}
+        {/* Bedrooms */}
         <div className="prep-before-after-comparison prep-before-after-feature">
           <div className="prep-before-after-heading">
             <span>01</span>
-
-            <div>
-              <h3>See what's already there.</h3>
-
-              <p>
-                Sometimes the right preparation matters more than a renovation.
-              </p>
-            </div>
-          </div>
-
-          <BeforeAfterSlider
-            before={kitchenBefore}
-            after={kitchenAfter}
-            beforeAlt="Kitchen before market preparation"
-            afterAlt="Kitchen prepared and professionally photographed for market"
-            ariaLabel="Compare the kitchen before and after market preparation"
-          />
-        </div>
-
-        {/* Living + Dining */}
-        <div className="prep-before-after-comparison">
-          <div className="prep-before-after-heading">
-            <span>02</span>
 
             <div>
               <h3>Help buyers picture home.</h3>
@@ -61,11 +38,36 @@ export default function PrepBeforeAfterSection() {
           </div>
 
           <BeforeAfterSlider
+            before={bedroomBefore}
+            after={bedroomAfter}
+            beforeAlt="Bedroom before market preparation"
+            afterAlt="Bedroom prepared and professionally photographed for market"
+            ariaLabel="Compare bedroom before and after market preparation"
+          />
+        </div>
+
+        {/* Living + Dining */}
+        <div className="prep-before-after-comparison">
+          <div className="prep-before-after-heading">
+            <span>02</span>
+
+            <div>
+              <h3>See what's already there.</h3>
+
+              <p>
+                Sometimes the right preparation matters more than a renovation.
+              </p>
+            </div>
+          </div>
+
+          <BeforeAfterSlider
             before={livingBefore}
             after={livingAfter}
             beforeAlt="Living and dining area before market preparation"
             afterAlt="Living and dining area prepared and professionally photographed for market"
             ariaLabel="Compare the living and dining area before and after market preparation"
+            beforePosition="center 20%"
+            afterPosition="center 90%"
           />
         </div>
 
@@ -87,7 +89,7 @@ export default function PrepBeforeAfterSection() {
             beforeAlt="Basement before market preparation"
             afterAlt="Basement prepared and professionally photographed for market"
             ariaLabel="Compare the basement before and after market preparation"
-            beforePosition="center 30%"
+            beforePosition="center 38%"
             afterPosition="center"
           />
         </div>

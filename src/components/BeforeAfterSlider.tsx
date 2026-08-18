@@ -178,13 +178,21 @@ export default function BeforeAfterSlider({
       </div>
 
       {/* Labels */}
-      <span className="before-after-label before-after-before-label">
+      <div
+        className={`before-after-label before-after-before-label ${
+          position < 22 ? "before-after-label--hidden" : ""
+        }`}
+      >
         Before
-      </span>
+      </div>
 
-      <span className="before-after-label before-after-after-label">
+      <div
+        className={`before-after-label before-after-after-label ${
+          position > 76 ? "before-after-label--hidden" : ""
+        }`}
+      >
         Prepared for Market
-      </span>
+      </div>
     </div>
   );
 }
