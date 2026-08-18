@@ -216,6 +216,98 @@
   color: var(--color-text-soft);
 }
 
+/* ========= BEFORE / AFTER ========= */
+.prep-before-after-section {
+  padding: 8rem 0;
+  background: var(--color-background);
+}
+
+.prep-before-after-container {
+  max-width: 1240px;
+}
+
+.prep-before-after-intro {
+  max-width: 920px;
+  margin-bottom: 6rem;
+}
+
+.prep-before-after-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+
+  color: var(--color-text);
+}
+
+.prep-before-after-intro p {
+  max-width: 720px;
+  margin: 2rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.8;
+
+  color: var(--color-text-soft);
+}
+
+.prep-before-after-comparison {
+  padding-top: 6rem;
+  margin-top: 6rem;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.prep-before-after-feature {
+  padding-top: 0;
+  margin-top: 0;
+
+  border-top: 0;
+}
+
+.prep-before-after-heading {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+
+  max-width: 760px;
+  margin-bottom: 2.25rem;
+}
+
+.prep-before-after-heading > span {
+  font-family: var(--font-heading);
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: rgba(128, 0, 0, 0.2);
+}
+
+.prep-before-after-heading h3 {
+  margin: 0 0 0.65rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  line-height: 1.05;
+
+  color: var(--color-text);
+}
+
+.prep-before-after-heading p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -342,6 +434,68 @@
 
     max-width: none;
     margin: 1.25rem 0 0;
+
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  /* ========= BEFORE / AFTER ========= */
+  .prep-before-after-section {
+    padding: 5rem 0;
+  }
+
+  .prep-before-after-intro {
+    margin-bottom: 4.5rem;
+  }
+
+  .prep-before-after-intro h2 {
+    font-size: clamp(3rem, 13vw, 4.4rem);
+    line-height: 1;
+  }
+
+  .prep-before-after-intro p {
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .prep-before-after-comparison {
+    padding-top: 4.5rem;
+    margin-top: 4.5rem;
+  }
+
+  .prep-before-after-feature {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .prep-before-after-heading {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.25rem;
+    row-gap: 0;
+
+    align-items: center;
+
+    margin-bottom: 1.75rem;
+  }
+
+  .prep-before-after-heading > span {
+    font-size: 3rem;
+  }
+
+  .prep-before-after-heading h3 {
+    margin: 0;
+
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .prep-before-after-heading p {
+    grid-column: 1 / -1;
+
+    margin-top: 1rem;
 
     font-size: 0.98rem;
     line-height: 1.7;

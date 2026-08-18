@@ -526,7 +526,193 @@ section {
 }
 
 /* =========================================================
-   8. RESPONSIVE
+   8. BEFORE / AFTER SLIDER
+   ========================================================= */
+.before-after-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.before-after-slider {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #e9e6e0;
+
+  cursor: ew-resize;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.before-after-slider:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.before-after-slider-image {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.before-after-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  pointer-events: none;
+
+  will-change: clip-path;
+}
+
+.before-after-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+
+  width: 2px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  will-change: left, margin-left;
+}
+
+.before-after-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+
+  width: 56px;
+  height: 56px;
+
+  border: 1px solid rgba(128, 0, 0, 0.2);
+  border-radius: 50%;
+
+  background: rgba(251, 250, 247, 0.97);
+
+  color: var(--color-accent);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+}
+
+.before-after-arrow {
+  display: block;
+
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.before-after-label {
+  position: absolute;
+  top: 26px;
+  z-index: 5;
+
+  padding: 10px 16px;
+
+  background: rgba(251, 250, 247, 0.94);
+
+  color: var(--color-text);
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  pointer-events: none;
+}
+
+.before-after-before-label {
+  left: 26px;
+}
+
+.before-after-after-label {
+  right: 26px;
+}
+
+/* Slider Hint Animation */
+@keyframes before-after-divider-hint {
+  0%,
+  100% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -9px;
+  }
+
+  50% {
+    margin-left: 0;
+  }
+
+  75% {
+    margin-left: 9px;
+  }
+}
+
+@keyframes before-after-handle-hint {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  75% {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+.before-after-slider-hint .before-after-divider {
+  animation: before-after-divider-hint 0.8s ease-in-out 2;
+}
+
+.before-after-slider-hint .before-after-handle {
+  animation: before-after-handle-hint 0.8s ease-in-out 2;
+}
+
+/* =========================================================
+   9. RESPONSIVE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -771,5 +957,47 @@ section {
 
   .footer-socials {
     gap: 1rem;
+  }
+
+  /* BEFORE / AFTER SLIDER */
+  .before-after-slider {
+    aspect-ratio: 4 / 3;
+  }
+
+  .before-after-handle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .before-after-arrow {
+    font-size: 1.4rem;
+  }
+
+  .before-after-label {
+    top: 16px;
+
+    padding: 8px 11px;
+
+    font-size: 0.62rem;
+    letter-spacing: 0.11em;
+  }
+
+  .before-after-before-label {
+    left: 16px;
+  }
+
+  .before-after-after-label {
+    right: 16px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .before-after-slider-hint .before-after-divider,
+  .before-after-slider-hint .before-after-handle {
+    animation: none;
   }
 }
