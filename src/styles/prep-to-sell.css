@@ -1,10 +1,10 @@
 /* =========================================================
-   PREP TO SELL -- HERO, 
+   PREP TO SELL -- HERO, PHILOSOPHY
    ========================================================= */
 
 /* ========= HERO ========= */
 .prep-hero-section {
-  padding: 7rem 0;
+  padding: 7rem 0 0;
 
   background: var(--color-background);
 }
@@ -116,6 +116,106 @@
   object-position: center;
 }
 
+/* ========= PHILOSOPHY ========= */
+.prep-philo-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+}
+
+.prep-philo-container {
+  max-width: 1120px;
+}
+
+.prep-philo-intro {
+  max-width: 900px;
+  margin: 0 0 2rem;
+}
+
+.prep-philo-intro h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.prep-philo-intro p {
+  margin: 2rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.prep-philo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prep-philo-item {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 270px;
+  padding: 3rem 2.5rem 2.75rem;
+}
+
+.prep-philo-item:first-child {
+  padding-left: 0;
+}
+
+.prep-philo-item:last-child {
+  padding-right: 0;
+}
+
+.prep-philo-item + .prep-philo-item {
+  border-left: 1px solid var(--color-border);
+}
+
+.prep-philo-number {
+  display: block;
+  margin-bottom: 1.5rem;
+
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: rgba(128, 0, 0, 0.2);
+}
+
+.prep-philo-item h3 {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.prep-philo-item p {
+  max-width: 310px;
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -123,7 +223,7 @@
 @media (max-width: 768px) {
   /* ========= HERO ========= */
   .prep-hero-section {
-    padding: 4.5rem 0 5rem;
+    padding: 4.5rem 0 1rem;
   }
 
   .prep-hero-container {
@@ -169,5 +269,81 @@
 
     object-fit: cover;
     object-position: center;
+  }
+
+  /* ========= PHILOSOPHY ========= */
+  .prep-philo-section {
+    padding: 5rem 0;
+  }
+
+  .prep-philo-intro {
+    margin-bottom: 2rem;
+  }
+
+  .prep-philo-intro h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .prep-philo-intro p {
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .prep-philo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .prep-philo-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.25rem;
+    align-items: center;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 1.75rem 0;
+  }
+
+  .prep-philo-item + .prep-philo-item {
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .prep-philo-number {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 0;
+
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .prep-philo-item h3 {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0;
+
+    font-size: 0.88rem;
+  }
+
+  .prep-philo-item p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    max-width: none;
+    margin: 1.25rem 0 0;
+
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 }
