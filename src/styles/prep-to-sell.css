@@ -1,0 +1,173 @@
+/* =========================================================
+   PREP TO SELL -- HERO, 
+   ========================================================= */
+
+/* ========= HERO ========= */
+.prep-hero-section {
+  padding: 7rem 0;
+
+  background: var(--color-background);
+}
+
+.prep-hero-container {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(4rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.prep-hero-content {
+  max-width: 720px;
+}
+
+.prep-hero-content h1 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3.4rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
+}
+
+.prep-hero-copy {
+  max-width: 680px;
+  margin: 2rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.prep-hero-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  margin-top: 2rem;
+  padding: 0.9rem 1.4rem;
+
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-background);
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.prep-hero-action:hover {
+  transform: translateY(-2px);
+}
+
+.prep-hero-action span {
+  font-size: 1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.prep-hero-action:hover span {
+  transform: translateX(4px);
+}
+
+.prep-hero-detail {
+  margin: 1.5rem 0 0;
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.hero-mobile-image {
+  display: none;
+}
+
+.hero-desktop-image {
+  display: block;
+}
+
+.prep-hero-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.prep-hero-image {
+  display: block;
+  width: 100%;
+  height: 650px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  /* ========= HERO ========= */
+  .prep-hero-section {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .prep-hero-container {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .prep-hero-content h1 {
+    font-size: clamp(2.8rem, 11vw, 4rem);
+    line-height: 1.03;
+  }
+
+  .prep-hero-copy {
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .prep-hero-action {
+    margin-top: 1.75rem;
+  }
+
+  .prep-hero-detail {
+    margin-top: 1.25rem;
+
+    font-size: 0.68rem;
+    line-height: 1.5;
+  }
+
+  .hero-mobile-image {
+    display: block;
+    margin: 1.25rem 0 2rem;
+  }
+
+  .hero-desktop-image {
+    display: none;
+  }
+
+  .prep-hero-image {
+    height: auto;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,3 +1,11 @@
+import "../styles/prep-to-sell.css";
+
+import PrepHeroSection from "../components/prep-to-sell/PrepHeroSection";
+
 export default function PrepToSellPage() {
-  return <h1>Prep to Sell</h1>;
+  return (
+    <div>
+      <PrepHeroSection />
+    </div>
+  );
 }
