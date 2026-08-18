@@ -706,6 +706,79 @@
   border-color: #fff;
 }
 
+/* ========= DIVORCE TESTIMONIAL ========= */
+.divorce-testimonial-section {
+  padding: 6rem 0;
+  background: var(--color-background);
+}
+
+.divorce-testimonial-container {
+  max-width: 1000px;
+}
+
+.divorce-testimonial-stars {
+  display: flex;
+  gap: 0.15rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.divorce-testimonial-stars svg {
+  font-size: 1.75rem;
+  color: #fdcc0d;
+}
+
+.divorce-testimonial-quote {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: var(--color-text);
+}
+
+.divorce-testimonial-attribution {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.divorce-testimonial-attribution strong {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-text);
+}
+
+.divorce-testimonial-attribution a {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.divorce-testimonial-attribution a:hover {
+  color: var(--color-accent-dark);
+  transform: translateX(3px);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -1073,5 +1146,28 @@
 
   .divorce-guide-link {
     margin-top: 2.25rem;
+  }
+
+  /* ========= DIVORCE TESTIMONIAL ========= */
+  .divorce-testimonial-section {
+    padding: 4.5rem 0;
+  }
+
+  .divorce-testimonial-stars {
+    margin-bottom: 1.5rem;
+  }
+
+  .divorce-testimonial-stars svg {
+    font-size: 1.5rem;
+  }
+
+  .divorce-testimonial-attribution {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    padding-top: 1.25rem;
   }
 }

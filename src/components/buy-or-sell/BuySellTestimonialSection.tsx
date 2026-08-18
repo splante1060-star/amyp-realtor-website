@@ -62,7 +62,7 @@ export default function BuySellTestimonialSection() {
             target="_blank"
             rel="noreferrer"
           >
-            Zillow Review →
+            Zillow Reviews →
           </a>
         </div>
       </div>
