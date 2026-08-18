@@ -19,7 +19,7 @@ export default function DivorceRealEstatePage() {
       <DivorceWorkingWithAmySection />
       <DivorceGuideSection />
       <DivorceTestimonialSection />
-      <DivorceClosingStatement />
+      {/* <DivorceClosingStatement /> */}
     </div>
   );
 }
