@@ -9,6 +9,9 @@ import bedroomAfter from "../../assets/After-Bedroom.jpg";
 import basementBefore from "../../assets/Before-Basement.jpg";
 import basementAfter from "../../assets/After-Basement.jpg";
 
+import exteriorBefore from "../../assets/Before-Exterior.png";
+import exteriorAfter from "../../assets/After-Exterior.png";
+
 export default function PrepBeforeAfterSection() {
   return (
     <section className="prep-before-after-section">
@@ -22,31 +25,33 @@ export default function PrepBeforeAfterSection() {
           </p>
         </div>
 
-        {/* Bedrooms */}
+        {/* Exterior */}
         <div className="prep-before-after-comparison prep-before-after-feature">
           <div className="prep-before-after-heading">
             <span>01</span>
 
             <div>
-              <h3>Help buyers picture home.</h3>
+              <h3>Start before they step inside.</h3>
 
               <p>
-                Thoughtful presentation helps buyers see how a space can look,
-                feel, and function.
+                A clean, cared-for exterior sets the tone for everything buyers
+                see next.
               </p>
             </div>
           </div>
 
           <BeforeAfterSlider
-            before={bedroomBefore}
-            after={bedroomAfter}
-            beforeAlt="Bedroom before market preparation"
-            afterAlt="Bedroom prepared and professionally photographed for market"
-            ariaLabel="Compare bedroom before and after market preparation"
+            before={exteriorBefore}
+            after={exteriorAfter}
+            beforeAlt="Basement before market preparation"
+            afterAlt="Basement prepared and professionally photographed for market"
+            ariaLabel="Compare the basement before and after market preparation"
+            beforePosition="center"
+            afterPosition="center 48%"
           />
         </div>
 
-        {/* Living + Dining */}
+        {/* Dining */}
         <div className="prep-before-after-comparison">
           <div className="prep-before-after-heading">
             <span>02</span>
@@ -71,10 +76,34 @@ export default function PrepBeforeAfterSection() {
           />
         </div>
 
-        {/* Basement */}
+        {/* Bedrooms */}
         <div className="prep-before-after-comparison">
           <div className="prep-before-after-heading">
             <span>03</span>
+
+            <div>
+              <h3>Help buyers picture home.</h3>
+
+              <p>
+                Thoughtful presentation helps buyers see how a space can look,
+                feel, and function.
+              </p>
+            </div>
+          </div>
+
+          <BeforeAfterSlider
+            before={bedroomBefore}
+            after={bedroomAfter}
+            beforeAlt="Bedroom before market preparation"
+            afterAlt="Bedroom prepared and professionally photographed for market"
+            ariaLabel="Compare bedroom before and after market preparation"
+          />
+        </div>
+
+        {/* Basement */}
+        <div className="prep-before-after-comparison">
+          <div className="prep-before-after-heading">
+            <span>04</span>
 
             <div>
               <h3>Show the possibility.</h3>

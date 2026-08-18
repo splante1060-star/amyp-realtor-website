@@ -446,7 +446,7 @@
   }
 
   .prep-before-after-intro {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
   }
 
   .prep-before-after-intro h2 {
@@ -462,8 +462,8 @@
   }
 
   .prep-before-after-comparison {
-    padding-top: 4.5rem;
-    margin-top: 4.5rem;
+    padding-top: 2.75rem;
+    margin-top: 3.5rem;
   }
 
   .prep-before-after-feature {
@@ -477,16 +477,26 @@
     column-gap: 1.25rem;
     row-gap: 0;
 
-    align-items: center;
+    align-items: start;
 
     margin-bottom: 1.75rem;
   }
 
   .prep-before-after-heading > span {
+    grid-column: 1;
+
     font-size: 3rem;
+    line-height: 1;
+    padding-top: 0.15rem;
+  }
+
+  .prep-before-after-heading > div {
+    display: contents;
   }
 
   .prep-before-after-heading h3 {
+    grid-column: 2;
+
     margin: 0;
 
     font-size: 2rem;
@@ -496,7 +506,7 @@
   .prep-before-after-heading p {
     grid-column: 1 / -1;
 
-    margin-top: 1rem;
+    margin: 1rem 0 0;
 
     font-size: 0.98rem;
     line-height: 1.7;
