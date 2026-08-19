@@ -7,26 +7,30 @@
 /* ========= HERO ========= */
 .divorce-hero-section {
   padding: 7rem 0;
-
   background: var(--color-background);
 }
 
 .divorce-hero-container {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.85fr);
-  gap: clamp(4rem, 7vw, 7rem);
+  grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "image title"
+    "image description"
+    "image actions";
+  column-gap: clamp(4rem, 7vw, 7rem);
   align-items: center;
+  align-content: center;
 }
 
-.divorce-hero-content {
-  max-width: 720px;
-}
+.divorce-hero-title {
+  grid-area: title;
 
-.divorce-hero-content h1 {
   margin: 0;
+  align-self: end;
 
   font-family: var(--font-heading);
-  font-size: clamp(3.4rem, 5vw, 5rem);
+  font-size: clamp(3.4rem, 5vw, 5.4rem);
   font-weight: 400;
   line-height: 1.02;
   letter-spacing: -0.025em;
@@ -34,32 +38,47 @@
   color: var(--color-text);
 }
 
-.divorce-hero-copy {
+.divorce-hero-title em {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 400;
+
+  color: var(--color-accent);
+}
+
+.divorce-hero-description {
+  grid-area: description;
+
   max-width: 680px;
-  margin: 2rem 0 0;
+  margin: 1.25rem 0 0;
 
   font-family: var(--font-body);
   font-size: 1.05rem;
-  line-height: 1.75;
+  line-height: 1.7;
 
   color: var(--color-text-soft);
 }
 
 .divorce-hero-guide {
+  grid-area: actions;
+
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 1rem;
 
-  margin-top: 2rem;
-  padding: 0.9rem 1.4rem;
+  width: 230px;
+
+  margin-top: 2.5rem;
+  padding: 0.85rem 1.5rem;
+  align-self: start;
 
   background: var(--color-accent);
   border: 1px solid var(--color-accent);
 
   font-family: var(--font-body);
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--color-background);
@@ -84,7 +103,9 @@
   transform: translateX(4px);
 }
 
-.divorce-hero-credential {
+/* .divorce-hero-credential {
+  grid-area: credentials;
+
   margin: 1.5rem 0 0;
 
   font-family: var(--font-body);
@@ -94,17 +115,10 @@
   text-transform: uppercase;
 
   color: var(--color-accent);
-}
-
-.hero-mobile-image {
-  display: none;
-}
-
-.hero-desktop-image {
-  display: block;
-}
+} */
 
 .divorce-hero-image-wrapper {
+  grid-area: image;
   width: 100%;
   overflow: hidden;
 }
@@ -831,20 +845,25 @@
 @media (max-width: 768px) {
   /* ========= HERO ========= */
   .divorce-hero-section {
-    padding: 4.5rem 0 5rem;
+    padding: 2.5rem 0 3rem;
   }
 
   .divorce-hero-container {
     grid-template-columns: 1fr;
-    gap: 2.75rem;
+    grid-template-areas:
+      "title"
+      "image"
+      "description"
+      "actions";
   }
 
-  .divorce-hero-content h1 {
+  .divorce-hero-title {
     font-size: clamp(2.8rem, 11vw, 4rem);
-    line-height: 1.03;
+    line-height: 1.02;
+    margin: 0 0 2rem;
   }
 
-  .divorce-hero-copy {
+  .divorce-hero-description {
     margin-top: 1.5rem;
 
     font-size: 1rem;
@@ -862,14 +881,14 @@
     line-height: 1.5;
   }
 
-  .hero-mobile-image {
+  /* .hero-mobile-image {
     display: block;
     margin: 1.25rem 0 2rem;
   }
 
   .hero-desktop-image {
     display: none;
-  }
+  } */
 
   .divorce-hero-image {
     height: auto;
