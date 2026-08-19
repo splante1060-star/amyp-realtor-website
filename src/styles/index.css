@@ -681,7 +681,8 @@ section {
   transform: translateX(8px);
 }
 
-/* Slider Hint Animation */
+/* ========= SLIDER HINT ANIMATION ========= */
+
 @keyframes before-after-divider-hint {
   0%,
   100% {
@@ -733,7 +734,7 @@ section {
    ========================================================= */
 
 @media (max-width: 768px) {
-  /* LAYOUT */
+  /* ========= LAYOUT ========= */
   .container {
     width: min(calc(100% - 2rem), var(--container-width));
   }
@@ -742,7 +743,7 @@ section {
     padding-block: var(--space-2xl);
   }
 
-  /* SHARED UI */
+  /* ========= SHARED UI ========= */
   .button-row {
     flex-direction: column;
   }
@@ -751,7 +752,7 @@ section {
     width: 100%;
   }
 
-  /* HEADER AND NAVIGATION */
+  /* ========= HEADER AND NAVIGATION ========= */
   .desktop-nav {
     display: none;
   }
@@ -895,7 +896,7 @@ section {
     color: var(--color-accent);
   }
 
-  /* FOOTER */
+  /* ========= FOOTER ========= */
   .site-footer {
     padding: 2.75rem 0 2rem;
   }
@@ -976,7 +977,7 @@ section {
     gap: 1rem;
   }
 
-  /* BEFORE / AFTER SLIDER */
+  /* ========= BEFORE / AFTER SLIDER ========= */
   .before-after-slider {
     aspect-ratio: 4 / 3;
   }
@@ -1000,11 +1001,11 @@ section {
   }
 
   .before-after-before-label {
-    left: 16px;
+    left: 6px;
   }
 
   .before-after-after-label {
-    right: 16px;
+    right: 6px;
   }
 }
 
