@@ -6,6 +6,7 @@ import PrepBeforeAfterSection from "../components/prep-to-sell/PrepBeforeAfterSe
 import PrepWhatToDoSection from "../components/prep-to-sell/PrepWhatToDoSection";
 import PrepContractorCoordinationSection from "../components/prep-to-sell/PrepContractorCoordinationSection";
 import PrepToMarketSection from "../components/prep-to-sell/PrepToMarketSection";
+import PrepPricingSection from "../components/prep-to-sell/PrepPricingSection";
 
 export default function PrepToSellPage() {
   return (
@@ -16,6 +17,7 @@ export default function PrepToSellPage() {
       <PrepWhatToDoSection />
       <PrepContractorCoordinationSection />
       <PrepToMarketSection />
+      <PrepPricingSection />
     </div>
   );
 }
