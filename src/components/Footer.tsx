@@ -4,6 +4,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
 import amyLogo from "../assets/Plante Realty Logo-US.png";
 import kwLogo from "../assets/kw.png";
 
@@ -39,9 +40,9 @@ export default function Footer() {
               Book Consultation
             </a>
 
-            <a href="/amy-plante.vcf" download="Amy-Plante.vcf">
+            {/* <a href="/amy-plante.vcf" download="Amy-Plante.vcf">
               Save Amy to Contacts
-            </a>
+            </a> */}
 
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdll0M9XLlYdAixN-NEPm8NcwoIEK6ET8GmPmHQNbVsiYDItQ/viewform"
@@ -99,51 +100,63 @@ export default function Footer() {
 
         {!isHomePage && (
           <div className="footer-contact">
-            <div className="footer-contact-info">
-              <strong>Amy Plante</strong>
-              <span>REALTOR® · MA · RI · FL</span>
+            <div className="footer-contact-left">
+              <div className="footer-contact-info">
+                {" "}
+                <strong>Amy Plante</strong>
+                <span>REALTOR® · MA · RI · FL</span>
+              </div>
+
+              <div className="footer-contact-links">
+                <a href="tel:5089629759">
+                  <PhoneOutlinedIcon />
+                  <span>508-962-9759</span>
+                </a>
+
+                <a href="mailto:amyplanterealtor@gmail.com">
+                  <EmailOutlinedIcon />
+                  <span>amyplanterealtor@gmail.com</span>
+                </a>
+              </div>
+
+              <div className="footer-socials">
+                <a
+                  href="https://www.instagram.com/a1plante?igsh=NmRrdHhzOGhrZWZi"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                >
+                  <InstagramIcon />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/share/1LtnLutt1J/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FacebookIcon />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/amyaplante?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedInIcon />
+                </a>
+              </div>
             </div>
 
-            <div className="footer-contact-links">
-              <a href="tel:5089629759">
-                <PhoneOutlinedIcon />
-                <span>508-962-9759</span>
-              </a>
-
-              <a href="mailto:amyplanterealtor@gmail.com">
-                <EmailOutlinedIcon />
-                <span>amyplanterealtor@gmail.com</span>
-              </a>
-            </div>
-
-            <div className="footer-socials">
-              <a
-                href="https://www.instagram.com/a1plante?igsh=NmRrdHhzOGhrZWZi"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
-              </a>
-
-              <a
-                href="https://www.facebook.com/share/1LtnLutt1J/?mibextid=wwXIfr"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-              >
-                <FacebookIcon />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/amyaplante?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <LinkedInIcon />
-              </a>
-            </div>
+            <a
+              href="/amy-plante.vcf"
+              download="Amy-Plante.vcf"
+              className="footer-save-contact"
+            >
+              <PersonAddAltOutlinedIcon />
+              <span>Save Contact</span>
+            </a>
           </div>
         )}
 
