@@ -113,8 +113,8 @@
   overflow: hidden;
   background: var(--color-section-red);
   color: #f8f5ef;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .real-estate-personal::before {
