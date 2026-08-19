@@ -1,3 +1,11 @@
+import "../styles/estate-sales.css";
+
+import EstateHeroSection from "../components/estate-sales/EstateHeroSection";
+
 export default function EstateSalesDownsizingPage() {
-  return <h1>Estate Sales Downsizing</h1>;
+  return (
+    <div>
+      <EstateHeroSection />
+    </div>
+  );
 }
