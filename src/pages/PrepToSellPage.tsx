@@ -3,6 +3,7 @@ import "../styles/prep-to-sell.css";
 import PrepHeroSection from "../components/prep-to-sell/PrepHeroSection";
 import PrepPhilosophySection from "../components/prep-to-sell/PrepPhilosophySection";
 import PrepBeforeAfterSection from "../components/prep-to-sell/PrepBeforeAfterSection";
+import PrepWhatToDoSection from "../components/prep-to-sell/PrepWhatToDoSection";
 
 export default function PrepToSellPage() {
   return (
@@ -10,6 +11,7 @@ export default function PrepToSellPage() {
       <PrepHeroSection />
       <PrepPhilosophySection />
       <PrepBeforeAfterSection />
+      <PrepWhatToDoSection />
     </div>
   );
 }
