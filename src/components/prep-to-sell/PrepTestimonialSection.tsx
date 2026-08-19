@@ -103,6 +103,14 @@ export default function PrepTestimonialSection() {
               <span className="prep-testimonial-control-line" />
             </button>
           ))}
+
+          <a
+            href="https://www.zillow.com/profile/amyplante"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View on Zillow →
+          </a>
         </div>
       </div>
     </section>

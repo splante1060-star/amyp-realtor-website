@@ -800,6 +800,7 @@
 .prep-testimonial-controls {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 1rem;
 
   margin-top: 3rem;
@@ -867,6 +868,28 @@
 .prep-testimonial-control--active .prep-testimonial-control-line {
   width: 4rem;
   background: var(--color-accent);
+}
+
+.prep-testimonial-controls a {
+  margin-left: auto;
+
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.prep-testimonial-controls a:hover {
+  color: var(--color-accent-dark);
+  transform: translateX(3px);
 }
 
 @keyframes prepTestimonialFade {
@@ -1506,6 +1529,7 @@
   .prep-testimonial-controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
     gap: 1rem;
 
     width: 100%;
@@ -1566,7 +1590,13 @@
   }
 
   .prep-testimonial-control--active .prep-testimonial-control-line {
-    flex-basis: 4rem;
+    flex-basis: 3.5rem;
     background: var(--color-accent);
+  }
+
+  .prep-testimonial-controls a {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }

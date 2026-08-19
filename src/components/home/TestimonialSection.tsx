@@ -54,6 +54,16 @@ export default function TestimonialSection() {
             </article>
           ))}
         </div>
+
+        <div className="testimonial-reviews-link">
+          <a
+            href="https://www.zillow.com/profile/amyplante"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View All Reviews on Zillow →
+          </a>
+        </div>
       </div>
     </section>
   );
