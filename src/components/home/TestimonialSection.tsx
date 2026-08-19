@@ -1,4 +1,4 @@
-import StarRateIcon from "@mui/icons-material/StarRate";
+import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
 const testimonials = [
   {
@@ -39,7 +39,7 @@ export default function TestimonialSection() {
             >
               <div className="testimonial-stars" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, index) => (
-                  <StarRateIcon key={index} />
+                  <StarRoundedIcon key={index} />
                 ))}
               </div>
 

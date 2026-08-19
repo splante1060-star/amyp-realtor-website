@@ -709,12 +709,20 @@
 
 /* ========= DIVORCE TESTIMONIAL ========= */
 .divorce-testimonial-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--color-background);
 }
 
 .divorce-testimonial-container {
-  max-width: 1000px;
+  max-width: 1250px;
+
+  padding: 2.5rem 3rem;
+
+  background: #f7f3ee;
+  border: 1px solid rgba(66, 13, 9, 0.08);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .divorce-testimonial-stars {
@@ -1190,12 +1198,25 @@
     padding: 4.5rem 0;
   }
 
+  .buy-sell-testimonial-container {
+    width: min(calc(100% - 3rem), 1000px);
+
+    padding: 1.75rem 1.5rem;
+
+    border-radius: 14px;
+  }
+
   .divorce-testimonial-stars {
     margin-bottom: 1.5rem;
   }
 
   .divorce-testimonial-stars svg {
     font-size: 1.5rem;
+  }
+
+  .divorce-testimonial-quote {
+    font-size: 1.15rem;
+    line-height: 1.45;
   }
 
   .divorce-testimonial-attribution {

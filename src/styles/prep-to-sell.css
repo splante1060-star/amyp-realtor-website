@@ -787,9 +787,12 @@
 .prep-testimonial-author {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
 
   margin-top: 2.5rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--color-border);
 }
 
 .prep-testimonial-author strong {
@@ -1473,19 +1476,17 @@
     font-weight: 700;
   }
 
-  .prep-testimonial-attribution {
+  .prep-testimonial-author {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.3rem;
 
     margin-top: 1.75rem;
-    padding-top: 0;
-
-    border-top: none;
+    padding-top: 1rem;
   }
 
-  .prep-testimonial-attribution strong,
-  .prep-testimonial-attribution span {
+  .prep-testimonial-author strong,
+  .prep-testimonial-author span {
     display: block;
     margin: 0;
 
@@ -1493,16 +1494,20 @@
     line-height: 1.35;
   }
 
-  .prep-testimonial-attribution strong {
+  .prep-testimonial-author strong {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
-  .prep-testimonial-attribution span {
+  .prep-testimonial-author span {
     color: var(--color-text-muted);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  .prep-testimonial-author .separator {
+    display: none;
   }
 
   .prep-testimonial-controls {

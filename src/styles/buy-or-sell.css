@@ -699,12 +699,20 @@
 
 /* ========= BUY / SELL TESTIMONIAL ========= */
 .buy-sell-testimonial-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--color-background);
 }
 
 .buy-sell-testimonial-container {
-  max-width: 1000px;
+  max-width: 1250px;
+
+  padding: 2.5rem 3rem;
+
+  background: #f7f3ee;
+  border: 1px solid rgba(66, 13, 9, 0.08);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .buy-sell-testimonial-stars {
@@ -728,7 +736,7 @@
   margin: 0;
 
   font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
   font-weight: 400;
   line-height: 1.4;
 
@@ -738,9 +746,9 @@
 .buy-sell-testimonial-list {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.6rem;
 
-  margin: 1.75rem 0 2rem;
+  margin: 1.25rem 0 2rem;
   padding: 0;
 
   list-style: none;
@@ -1149,6 +1157,14 @@
     padding: 4.5rem 0;
   }
 
+  .buy-sell-testimonial-container {
+    width: min(calc(100% - 3rem), 1000px);
+
+    padding: 1.75rem 1.5rem;
+
+    border-radius: 14px;
+  }
+
   .buy-sell-testimonial-stars {
     margin-bottom: 1.5rem;
   }
@@ -1159,19 +1175,19 @@
 
   .buy-sell-testimonial-opening,
   .buy-sell-testimonial-closing {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     line-height: 1.4;
   }
 
   .buy-sell-testimonial-list {
-    gap: 1rem;
-    margin: 1.75rem 0 2rem;
+    gap: 0.7rem;
+    margin: 1.35rem 0 2rem;
   }
 
   .buy-sell-testimonial-list li {
     padding-left: 1.35rem;
 
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.65;
   }
 
