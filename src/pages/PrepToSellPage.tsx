@@ -5,8 +5,7 @@ import PrepPhilosophySection from "../components/prep-to-sell/PrepPhilosophySect
 import PrepBeforeAfterSection from "../components/prep-to-sell/PrepBeforeAfterSection";
 import PrepWhatToDoSection from "../components/prep-to-sell/PrepWhatToDoSection";
 import PrepContractorCoordinationSection from "../components/prep-to-sell/PrepContractorCoordinationSection";
-import PrepToMarketSection from "../components/prep-to-sell/PrepToMarketSection";
-import PrepPricingSection from "../components/prep-to-sell/PrepPricingSection";
+// import PrepToMarketSection from "../components/prep-to-sell/PrepToMarketSection";
 import PrepTestimonialSection from "../components/prep-to-sell/PrepTestimonialSection";
 
 export default function PrepToSellPage() {
@@ -17,8 +16,7 @@ export default function PrepToSellPage() {
       <PrepBeforeAfterSection />
       <PrepWhatToDoSection />
       <PrepContractorCoordinationSection />
-      <PrepToMarketSection />
-      <PrepPricingSection />
+      {/* <PrepToMarketSection /> */}
       <PrepTestimonialSection />
     </div>
   );

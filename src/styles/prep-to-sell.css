@@ -411,24 +411,23 @@
 }
 
 /* ========= CONTRACTOR COORDINATION ========= */
+
 .prep-coordination-section {
-  padding: 5rem 0 4rem;
+  padding: 6.5rem 0;
 
   background: var(--color-section-red);
   color: var(--color-background);
 }
 
 .prep-coordination-container {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.85fr);
-  column-gap: clamp(4rem, 7vw, 7rem);
-  row-gap: 4.5rem;
-
-  align-items: center;
+  max-width: var(--container-width);
 }
 
 .prep-coordination-content {
-  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 7rem;
+  align-items: center;
 }
 
 .prep-coordination-content h2 {
@@ -436,83 +435,141 @@
   margin: 0;
 
   font-family: var(--font-heading);
-  font-size: clamp(3.25rem, 4.5vw, 4.75rem);
+  font-size: clamp(3.4rem, 4.8vw, 5.3rem);
   font-weight: 400;
-  line-height: 1.02;
+  line-height: 0.98;
   letter-spacing: -0.025em;
 
   color: var(--color-background);
 }
 
 .prep-coordination-content > p {
-  max-width: 500px;
+  max-width: 620px;
   margin: 0;
-  padding-top: 0;
 
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.8;
 
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .prep-coordination-content strong {
-  color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--color-background);
 }
 
 .prep-coordination-content em {
-  color: #fff;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
+  font-family: var(--font-body);
   font-style: italic;
+  font-weight: 600;
+
+  color: var(--color-background);
 }
 
 .prep-coordination-services {
-  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-
-  gap: 2rem;
+  margin-top: 4rem;
 
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.prep-coordination-services span {
+.prep-coordination-service {
   position: relative;
 
-  padding: 1.5rem 2rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
 
+  min-width: 0;
+  padding: 1.8rem 0.75rem;
+
+  text-align: center;
+}
+
+.prep-coordination-service:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  top: 22%;
+  right: 0;
+  bottom: 22%;
+
+  width: 1px;
+
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.prep-coordination-service svg {
+  width: 2rem;
+  height: 2rem;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.prep-coordination-service span {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.1em;
+  line-height: 1.25;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 
   color: rgba(255, 255, 255, 0.72);
 }
 
-.prep-coordination-services span:not(:last-child)::after {
-  content: "·";
-
-  position: absolute;
-  right: 0;
-
-  color: rgba(255, 255, 255, 0.4);
+.prep-coordination-service--featured svg {
+  color: var(--color-background);
 }
 
-.prep-coordination-services span:last-child {
-  padding-right: 0;
-}
-
-.prep-coordination-services span:nth-child(4) {
+.prep-coordination-service--featured span {
   font-weight: 800;
+  color: var(--color-background);
+}
+
+.prep-coordination-strategy {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  padding-top: 2.75rem;
+}
+
+.prep-coordination-strategy-icon {
+  flex: 0 0 auto;
+
+  width: 4.75rem !important;
+  height: 4.75rem !important;
+
+  color: rgba(238, 213, 163, 0.8);
+}
+
+.prep-coordination-strategy p {
+  max-width: 900px;
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.prep-coordination-strategy strong {
+  font-weight: 700;
+  color: var(--color-background);
+}
+
+.prep-coordination-strategy em {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 600;
+
   color: var(--color-background);
 }
 
@@ -626,88 +683,6 @@
 .prep-to-market-copy strong {
   font-weight: 700;
   color: var(--color-text);
-}
-
-/* ========= PREP + PRICING ========= */
-.prep-pricing-section {
-  padding: 5rem 0;
-  background: var(--color-section-red);
-}
-
-.prep-pricing-container {
-  position: relative;
-}
-
-.prep-pricing-rule {
-  width: 100%;
-  height: 1px;
-  margin: 0 0 3.5rem;
-
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.prep-pricing-content {
-  max-width: 900px;
-}
-
-.prep-pricing-content h2 {
-  margin: 0;
-
-  font-family: var(--font-heading);
-  font-size: clamp(3.25rem, 4.5vw, 5rem);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.025em;
-
-  color: var(--color-background);
-}
-
-.prep-pricing-content h2 em {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: inherit;
-
-  color: var(--color-background);
-}
-
-.prep-pricing-copy {
-  max-width: 750px;
-  margin-top: 2.5rem;
-}
-
-.prep-pricing-copy p {
-  margin: 0;
-
-  font-family: var(--font-body);
-  font-size: 1.08rem;
-  line-height: 1.8;
-
-  color: rgba(255, 255, 255, 0.78);
-}
-
-.prep-pricing-copy p + p {
-  margin-top: 1.25rem;
-}
-
-.prep-pricing-copy strong {
-  font-weight: 700;
-  color: #fff;
-}
-
-.prep-pricing-icon {
-  position: absolute;
-
-  top: 50%;
-  right: 2rem;
-
-  width: 11rem !important;
-  height: 11rem !important;
-
-  transform: translateY(-40%);
-
-  color: rgba(255, 255, 255, 0.08);
-
-  pointer-events: none;
 }
 
 /* ========= PREP TESTIMONIAL ========= */
@@ -1165,6 +1140,7 @@
   }
 
   /* ========= CONTRACTOR COORDINATION ========= */
+
   .prep-coordination-section {
     padding: 5rem 0;
   }
@@ -1179,12 +1155,14 @@
 
   .prep-coordination-content h2 {
     max-width: none;
+
     font-size: clamp(2.8rem, 12vw, 4rem);
     line-height: 1;
   }
 
   .prep-coordination-content > p {
     max-width: none;
+
     margin-top: 1.75rem;
     padding-top: 0;
 
@@ -1195,86 +1173,133 @@
   .prep-coordination-services {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    justify-content: center;
     align-items: center;
 
     gap: 0;
 
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     padding: 1rem 0;
+
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  .prep-coordination-services span {
+  .prep-coordination-service {
     position: relative;
 
-    margin: 0;
-    padding: 0.8rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
 
-    font-size: 0.62rem;
-    line-height: 1.25;
+    min-width: 0;
+    margin: 0;
+    padding: 0.8rem 0.25rem;
+
     text-align: center;
+  }
+
+  .prep-coordination-service svg {
+    font-size: 1.4rem;
+
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .prep-coordination-service span {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.58rem;
+    line-height: 1.2;
+    letter-spacing: 0.09em;
     white-space: nowrap;
 
     border: none;
   }
 
-  .prep-coordination-services span::after {
-    display: none;
-  }
-
-  .prep-coordination-services span:nth-child(1),
-  .prep-coordination-services span:nth-child(2),
-  .prep-coordination-services span:nth-child(3) {
+  .prep-coordination-service:nth-child(1),
+  .prep-coordination-service:nth-child(2),
+  .prep-coordination-service:nth-child(3) {
     grid-row: 1;
   }
 
-  .prep-coordination-services span:nth-child(1)::after,
-  .prep-coordination-services span:nth-child(2)::after {
-    content: "·";
-    display: block;
-
-    position: absolute;
-    top: 50%;
-    right: -1px;
-
-    transform: translateY(-50%);
-
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  .prep-coordination-services span:nth-child(4) {
+  .prep-coordination-service:nth-child(4) {
     grid-column: 1 / -1;
     grid-row: 2;
 
-    padding: 0.9rem 0;
+    padding: 1.1rem 0;
+  }
 
-    font-size: 0.7rem;
+  .prep-coordination-service:nth-child(4) svg {
+    font-size: 1.55rem;
+    color: var(--color-background);
+  }
+
+  .prep-coordination-service:nth-child(4) span {
+    font-size: 0.66rem;
     font-weight: 800;
 
     color: var(--color-background);
   }
 
-  .prep-coordination-services span:nth-child(5),
-  .prep-coordination-services span:nth-child(6),
-  .prep-coordination-services span:nth-child(7) {
+  .prep-coordination-service:nth-child(5),
+  .prep-coordination-service:nth-child(6),
+  .prep-coordination-service:nth-child(7) {
     grid-row: 3;
   }
 
-  .prep-coordination-services span:nth-child(5)::after,
-  .prep-coordination-services span:nth-child(6)::after {
-    content: "·";
-    display: block;
+  .prep-coordination-strategy {
+    position: relative;
+    overflow: hidden;
 
+    margin-top: 0;
+    padding: 2.25rem 1.5rem 1.25rem;
+  }
+
+  .prep-coordination-strategy p {
+    position: relative;
+    z-index: 1;
+
+    max-width: none;
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.75;
+
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .prep-coordination-strategy p strong {
+    font-weight: 700;
+    color: var(--color-background);
+  }
+
+  .prep-coordination-strategy p em {
+    font-weight: 600;
+    color: var(--color-background);
+  }
+
+  .prep-coordination-strategy-icon {
     position: absolute;
-    top: 50%;
-    right: -1px;
+    z-index: 0;
 
-    transform: translateY(-50%);
+    right: 0.25rem;
+    bottom: 0.25rem;
 
-    color: rgba(255, 255, 255, 0.4);
+    width: 8rem !important;
+    height: 8rem !important;
+
+    opacity: 0.08;
+
+    color: var(--color-background);
+
+    pointer-events: none;
   }
 
   /* ========= PREP TO MARKET ========= */
@@ -1384,38 +1409,6 @@
     font-weight: 700;
 
     color: var(--color-text);
-  }
-
-  /* ========= PREP + PRICING ========= */
-  .prep-pricing-section {
-    padding: 4rem 0;
-  }
-
-  .prep-pricing-rule {
-    margin-bottom: 2.75rem;
-  }
-
-  .prep-pricing-content {
-    max-width: none;
-  }
-
-  .prep-pricing-content h2 {
-    font-size: clamp(2.7rem, 11vw, 3.6rem);
-    line-height: 1;
-  }
-
-  .prep-pricing-copy {
-    max-width: none;
-    margin-top: 2rem;
-  }
-
-  .prep-pricing-copy p {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-
-  .prep-pricing-copy p + p {
-    margin-top: 1.25rem;
   }
 
   /* ========= PREP TESTIMONIAL ========= */
