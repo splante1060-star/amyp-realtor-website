@@ -410,6 +410,112 @@
   font-style: italic;
 }
 
+/* ========= CONTRACTOR COORDINATION ========= */
+.prep-coordination-section {
+  padding: 5rem 0 4rem;
+
+  background: var(--color-section-red);
+  color: var(--color-background);
+}
+
+.prep-coordination-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.85fr);
+  column-gap: clamp(4rem, 7vw, 7rem);
+  row-gap: 4.5rem;
+
+  align-items: center;
+}
+
+.prep-coordination-content {
+  display: contents;
+}
+
+.prep-coordination-content h2 {
+  max-width: 620px;
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3.25rem, 4.5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-background);
+}
+
+.prep-coordination-content > p {
+  max-width: 500px;
+  margin: 0;
+  padding-top: 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.prep-coordination-content strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.prep-coordination-content em {
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.prep-coordination-services {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  gap: 2rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.prep-coordination-services span {
+  position: relative;
+
+  padding: 1.5rem 2rem 1.5rem 0;
+
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.prep-coordination-services span:not(:last-child)::after {
+  content: "·";
+
+  position: absolute;
+  right: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.prep-coordination-services span:last-child {
+  padding-right: 0;
+}
+
+.prep-coordination-services span:nth-child(4) {
+  font-weight: 800;
+  color: var(--color-background);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -666,5 +772,118 @@
   .prep-what-closing p {
     font-size: clamp(2.25rem, 9vw, 3.25rem);
     line-height: 1.15;
+  }
+
+  /* ========= CONTRACTOR COORDINATION ========= */
+  .prep-coordination-section {
+    padding: 5rem 0;
+  }
+
+  .prep-coordination-container {
+    display: block;
+  }
+
+  .prep-coordination-content {
+    display: block;
+  }
+
+  .prep-coordination-content h2 {
+    max-width: none;
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .prep-coordination-content > p {
+    max-width: none;
+    margin-top: 1.75rem;
+    padding-top: 0;
+
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .prep-coordination-services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    align-items: center;
+
+    gap: 0;
+
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .prep-coordination-services span {
+    position: relative;
+
+    margin: 0;
+    padding: 0.8rem 0.5rem;
+
+    font-size: 0.62rem;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+
+    border: none;
+  }
+
+  .prep-coordination-services span::after {
+    display: none;
+  }
+
+  .prep-coordination-services span:nth-child(1),
+  .prep-coordination-services span:nth-child(2),
+  .prep-coordination-services span:nth-child(3) {
+    grid-row: 1;
+  }
+
+  .prep-coordination-services span:nth-child(1)::after,
+  .prep-coordination-services span:nth-child(2)::after {
+    content: "·";
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    right: -1px;
+
+    transform: translateY(-50%);
+
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .prep-coordination-services span:nth-child(4) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    padding: 0.9rem 0;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+
+    color: var(--color-background);
+  }
+
+  .prep-coordination-services span:nth-child(5),
+  .prep-coordination-services span:nth-child(6),
+  .prep-coordination-services span:nth-child(7) {
+    grid-row: 3;
+  }
+
+  .prep-coordination-services span:nth-child(5)::after,
+  .prep-coordination-services span:nth-child(6)::after {
+    content: "·";
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    right: -1px;
+
+    transform: translateY(-50%);
+
+    color: rgba(255, 255, 255, 0.4);
   }
 }
