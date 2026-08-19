@@ -516,6 +516,118 @@
   color: var(--color-background);
 }
 
+/* ========= PREP TO MARKET ========= */
+.prep-to-market-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+}
+
+.prep-to-market-container {
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.prep-to-market-heading {
+  max-width: 1050px;
+}
+
+.prep-to-market-heading h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3.25rem, 4.5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+
+  color: var(--color-text);
+}
+
+.prep-to-market-heading h2 span,
+.prep-to-market-heading h2 em {
+  display: block;
+}
+
+.prep-to-market-heading h2 em {
+  margin-top: 1rem;
+
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--color-accent);
+}
+
+.prep-to-market-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2.75rem 0;
+
+  border-top: 1px solid rgba(66, 13, 9, 0.18);
+  border-bottom: 1px solid rgba(66, 13, 9, 0.18);
+}
+
+.prep-to-market-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  flex: 0 0 auto;
+}
+
+.prep-to-market-step > span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: var(--color-accent);
+}
+
+.prep-to-market-step strong {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-text);
+}
+
+.prep-to-market-arrow {
+  flex: 1;
+
+  margin: 0 2rem;
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+
+  color: var(--color-accent);
+}
+
+.prep-to-market-copy {
+  max-width: 1050px;
+  margin: 0;
+}
+
+.prep-to-market-copy p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.8;
+
+  color: var(--color-text-muted);
+}
+
+.prep-to-market-copy strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -885,5 +997,114 @@
     transform: translateY(-50%);
 
     color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* ========= PREP TO MARKET ========= */
+  .prep-to-market-section {
+    padding: 4.5rem 0;
+  }
+
+  .prep-to-market-container {
+    display: block;
+  }
+
+  .prep-to-market-heading {
+    max-width: none;
+    margin-bottom: 3rem;
+  }
+
+  .prep-to-market-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2.45rem, 10vw, 3.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+  }
+
+  .prep-to-market-heading h2 span,
+  .prep-to-market-heading h2 em {
+    display: block;
+  }
+
+  .prep-to-market-heading h2 em {
+    margin-top: 1rem;
+
+    font-family: var(--font-heading);
+    font-size: 0.88em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.05;
+
+    color: var(--color-accent);
+  }
+
+  .prep-to-market-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 0.75rem 0;
+
+    border-top: 1px solid rgba(66, 13, 9, 0.18);
+    border-bottom: 1px solid rgba(66, 13, 9, 0.18);
+  }
+
+  .prep-to-market-step {
+    display: grid;
+    grid-template-columns: 2.75rem 1fr;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 0.75rem 0;
+  }
+
+  .prep-to-market-step > span {
+    font-size: 0.62rem;
+    line-height: 1;
+
+    color: var(--color-accent);
+  }
+
+  .prep-to-market-step strong {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+
+    color: var(--color-text);
+  }
+
+  .prep-to-market-arrow {
+    margin: -0.1rem 0;
+    padding-left: 3.45rem;
+
+    font-size: 1.15rem;
+    line-height: 1;
+    text-align: left;
+
+    transform: rotate(90deg);
+    transform-origin: 4rem center;
+
+    color: var(--color-accent);
+  }
+
+  .prep-to-market-copy {
+    max-width: none;
+    margin: 2.5rem 0 0;
+  }
+
+  .prep-to-market-copy p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.75;
+
+    color: var(--color-text-soft);
+  }
+
+  .prep-to-market-copy strong {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 700;
+
+    color: var(--color-text);
   }
 }
