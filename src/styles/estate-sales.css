@@ -1,5 +1,5 @@
 /* =========================================================
-   ESTATE SALES -- HERO
+   ESTATE SALES -- HERO, INTRO
    ========================================================= */
 
 /* ========= HERO ========= */
@@ -139,6 +139,86 @@
 
   object-fit: cover;
   object-position: center;
+}
+
+/* ========= INTRO ========= */
+.estate-intro-section {
+  padding: 7rem 0;
+  background: var(--color-section-red);
+  color: var(--color-background);
+}
+
+.estate-intro-container {
+  max-width: 1120px;
+}
+
+.estate-intro-header h2 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  color: var(--color-background);
+}
+
+.estate-intro-header p {
+  max-width: 1000px;
+  margin: 2rem 0 2rem;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: rgba(248, 246, 241, 0.82);
+}
+
+.estate-intro-steps {
+  border-top: 1px solid rgba(248, 246, 241, 0.25);
+}
+
+.estate-intro-step {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+
+  padding: 1.75rem 0;
+
+  border-bottom: 1px solid rgba(248, 246, 241, 0.25);
+}
+
+.estate-intro-number {
+  font-family: var(--font-heading);
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 0.9;
+
+  color: rgba(248, 246, 241, 0.42);
+}
+
+.estate-intro-step-content h3 {
+  margin: 0 0 0.65rem;
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-background);
+}
+
+.estate-intro-step-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(248, 246, 241, 0.78);
 }
 
 /* ========================================
