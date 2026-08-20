@@ -7,7 +7,7 @@ import ListingInsightSection from "../components/buy-or-sell/ListingInsightSecti
 import SellerExperienceSection from "../components/buy-or-sell/SellerExperienceSection";
 import PrepToSellCallout from "../components/buy-or-sell/PrepToSellCallout";
 import BuySellTestimonialSection from "../components/buy-or-sell/BuySellTestimonialSection";
-import BuySellClosingStatement from "../components/buy-or-sell/BuySellClosingStatement";
+// import BuySellClosingStatement from "../components/buy-or-sell/BuySellClosingStatement";
 
 export default function BuyOrSellPage() {
   return (
@@ -19,7 +19,7 @@ export default function BuyOrSellPage() {
       <SellerExperienceSection />
       <PrepToSellCallout />
       <BuySellTestimonialSection />
-      <BuySellClosingStatement />
+      {/* <BuySellClosingStatement /> */}
     </div>
   );
 }
