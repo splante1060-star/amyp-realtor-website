@@ -1,5 +1,5 @@
 /* =========================================================
-   ESTATE SALES -- HERO, INTRO
+   ESTATE SALES -- HERO, INTRO, WHERE TO START
    ========================================================= */
 
 /* ========= HERO ========= */
@@ -222,6 +222,130 @@
   color: rgba(248, 246, 241, 0.78);
 }
 
+/* ========= WHERE TO START ========= */
+.estate-start-section {
+  padding: 7rem 0;
+  background: var(--color-background);
+}
+
+.estate-start-container {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 6rem;
+  align-items: stretch;
+}
+.estate-start-heading {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 2rem;
+}
+
+.estate-start-heading h2 {
+  margin: 0 0 1.5rem;
+  max-width: 540px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 4vw, 4.25rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.estate-start-heading p {
+  margin: 0;
+  max-width: 520px;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.estate-start-heading p + p {
+  margin-top: 1rem;
+}
+
+.estate-start-paths {
+  margin: 0;
+  align-self: center;
+  transform: translateY(0.5rem);
+}
+
+.estate-start-path {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 1.75rem;
+
+  padding: 1.75rem 0;
+}
+
+.estate-start-path::after {
+  content: "";
+
+  position: absolute;
+  left: 26px;
+  top: calc(1.75rem + 52px);
+
+  width: 1px;
+  height: calc(100% - 52px);
+
+  background: var(--color-border);
+}
+
+.estate-start-path:last-child::after {
+  display: none;
+}
+
+.estate-start-icon {
+  position: relative;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+
+  color: var(--color-accent);
+}
+
+.estate-start-icon svg {
+  font-size: 1.25rem;
+}
+
+.estate-start-path-content h3 {
+  margin: 0 0 0.4rem;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.estate-start-path-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+
+  color: var(--color-text-soft);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -279,5 +403,124 @@
 
     object-fit: cover;
     object-position: center;
+  }
+
+  /* ========= INTRO ========= */
+
+  .estate-intro-section {
+    padding: 4.5rem 0;
+  }
+
+  .estate-intro-container {
+    max-width: none;
+  }
+
+  .estate-intro-header h2 {
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+    line-height: 1;
+  }
+
+  .estate-intro-header p {
+    max-width: none;
+    margin: 1.75rem 0 2.25rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .estate-intro-step {
+    grid-template-columns: 72px 1fr;
+    gap: 1.25rem;
+
+    padding: 1.5rem 0;
+  }
+
+  .estate-intro-number {
+    font-size: 3rem;
+    line-height: 0.95;
+  }
+
+  .estate-intro-step-content h3 {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.82rem;
+    line-height: 1.25;
+  }
+
+  .estate-intro-step-content p {
+    max-width: none;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  /* ========= WHERE TO START ========= */
+  .estate-start-section {
+    padding: 4.5rem 0;
+  }
+
+  .estate-start-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .estate-start-heading {
+    padding-right: 0;
+  }
+
+  .estate-start-heading h2 {
+    max-width: none;
+    margin-bottom: 1.25rem;
+
+    font-size: clamp(2.7rem, 12vw, 3.5rem);
+    line-height: 1.02;
+  }
+
+  .estate-start-heading p {
+    max-width: none;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .estate-start-paths {
+    width: 100%;
+    margin: 0;
+    align-self: auto;
+    transform: none;
+  }
+
+  .estate-start-path {
+    grid-template-columns: 46px 1fr;
+    gap: 1.25rem;
+
+    padding: 1.4rem 0;
+  }
+
+  .estate-start-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .estate-start-icon svg {
+    font-size: 1.15rem;
+  }
+
+  .estate-start-path::after {
+    left: 23px;
+    top: calc(1.4rem + 46px);
+
+    height: calc(100% - 46px);
+  }
+
+  .estate-start-path-content h3 {
+    margin-bottom: 0.3rem;
+
+    font-size: 0.95rem;
+  }
+
+  .estate-start-path-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
