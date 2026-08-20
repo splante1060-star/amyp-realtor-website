@@ -653,6 +653,18 @@
   gap: 4rem;
 }
 
+.prep-callout-content::before {
+  content: "";
+  display: block;
+
+  width: 72px;
+  height: 2px;
+
+  margin-bottom: 2rem;
+
+  background: var(--color-accent);
+}
+
 .prep-callout-content {
   max-width: 720px;
 }
