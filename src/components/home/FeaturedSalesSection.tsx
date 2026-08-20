@@ -30,7 +30,7 @@ const featuredSales = [
     detail: "Sold Over Asking By $90,000",
   },
   {
-    image: "src/assets/Feature-Cumberland.PNG",
+    image: "src/assets/Feature-Cumberland.jpg",
     location: "Cumberland, RI",
     salePrice: "$525,500",
     detail: "Sold Over Asking By $35,600",
