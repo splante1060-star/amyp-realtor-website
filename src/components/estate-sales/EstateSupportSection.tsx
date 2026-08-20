@@ -21,7 +21,7 @@ const coreAreas = [
 
 export default function EstateSupportSection() {
   return (
-    <section className="estate-intro-section">
+    <section id="estate-support" className="estate-intro-section">
       <div className="container estate-intro-container">
         <div className="estate-intro-header">
           <h2>A lifetime of memories deserves a thoughtful next step.</h2>

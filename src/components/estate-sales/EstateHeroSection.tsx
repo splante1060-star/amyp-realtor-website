@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import estateHero from "../../assets/Estate-Sales-Hero.jpg";
 // import estateSaleHero from "../../assets/IMG_6067.jpg";
 
@@ -36,9 +35,9 @@ export default function EstateHeroSection() {
             <span aria-hidden="true">→</span>
           </a>
 
-          <Link to="#estate-support" className="estate-hero-secondary">
+          <a href="#estate-support" className="estate-hero-secondary">
             See How Amy Can Help
-          </Link>
+          </a>
         </div>
       </div>
     </section>
