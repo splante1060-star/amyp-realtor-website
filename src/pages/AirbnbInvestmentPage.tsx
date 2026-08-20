@@ -1,3 +1,11 @@
+import "../styles/airbnb-investment.css";
+
+import AirbnbHeroSection from "../components/airbnb-investment/AirbnbHeroSection";
+
 export default function AirbnbInvestmentPage() {
-  return <h1>Airbnb & Investments</h1>;
+  return (
+    <div>
+      <AirbnbHeroSection />
+    </div>
+  );
 }
