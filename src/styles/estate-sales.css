@@ -212,6 +212,7 @@
 }
 
 .estate-intro-step-content p {
+  max-width: 920px;
   margin: 0;
 
   font-family: var(--font-body);

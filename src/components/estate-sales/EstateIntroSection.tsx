@@ -3,13 +3,13 @@ const coreAreas = [
     number: "01",
     title: "Compassionate Transition Support",
     description:
-      "Every situation is different. Amy helps you understand what needs to happen, what can wait, and what the next step should be — so you and your family can move forward at a pace that makes sense.",
+      "Every situation is different. Amy helps you understand what needs to happen, what can wait, and what the next step should be so you and your family can move forward at a pace that makes sense.",
   },
   {
     number: "02",
     title: "Vendor Coordination",
     description:
-      "When outside help is needed, Amy can connect you with trusted professionals and help coordinate the details — from organizing and clean-outs to repairs, landscaping, cleaning, and other pre-sale needs.",
+      "When outside help is needed, Amy can connect you with trusted professionals and help coordinate the details from organizing and clean-outs to repairs, landscaping, cleaning, and other pre-sale needs.",
   },
   {
     number: "03",
@@ -24,7 +24,7 @@ export default function EstateIntroSection() {
     <section className="estate-intro-section">
       <div className="container estate-intro-container">
         <div className="estate-intro-header">
-          <h2>Some moves are about more than real estate.</h2>
+          <h2>A lifetime of memories deserves a thoughtful next step.</h2>
 
           <p>
             A longtime home can hold decades of memories, belongings, routines,
