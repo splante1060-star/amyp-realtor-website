@@ -19,7 +19,7 @@ const coreAreas = [
   },
 ];
 
-export default function EstateIntroSection() {
+export default function EstateSupportSection() {
   return (
     <section className="estate-intro-section">
       <div className="container estate-intro-container">
