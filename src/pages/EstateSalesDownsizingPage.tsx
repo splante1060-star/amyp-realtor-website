@@ -3,6 +3,7 @@ import "../styles/estate-sales.css";
 import EstateHeroSection from "../components/estate-sales/EstateHeroSection";
 import EstateIntroSection from "../components/estate-sales/EstateIntroSection";
 import EstateWhereToStartSection from "../components/estate-sales/EstateWhereToStartSection";
+import EstateSaleOptions from "../components/estate-sales/EstateSaleOptions";
 
 export default function EstateSalesDownsizingPage() {
   return (
@@ -10,6 +11,7 @@ export default function EstateSalesDownsizingPage() {
       <EstateHeroSection />
       <EstateIntroSection />
       <EstateWhereToStartSection />
+      <EstateSaleOptions />
     </div>
   );
 }
