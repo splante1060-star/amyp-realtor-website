@@ -972,7 +972,7 @@
 
   /* ========= BUYER EXPERIENCE ========= */
   .buyer-experience-section {
-    display: block;
+    padding: 4.5rem 0;
   }
 
   .buyer-experience-actions-desktop {
@@ -998,8 +998,8 @@
   }
 
   .buyer-experience-intro h2 {
-    font-size: clamp(2.8rem, 13vw, 4rem);
-    line-height: 1.05;
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+    line-height: 1;
   }
 
   .buyer-experience-lead {
@@ -1008,25 +1008,28 @@
   }
 
   .buyer-experience-copy {
-    margin: 2.5rem 0 2rem;
+    margin: 1.75rem 0 2.25rem;
     font-size: 1rem;
     line-height: 1.7;
   }
 
   .buyer-experience-step {
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 72px 1fr;
     gap: 1.25rem;
 
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .buyer-experience-number {
-    font-size: 2.8rem;
+    font-size: 3rem;
+    line-height: 0.95;
   }
 
   .buyer-experience-step-content h3 {
+    margin-bottom: 0.5rem;
+
     font-size: 0.82rem;
-    line-height: 1.4;
+    line-height: 1.25;
   }
 
   .buyer-experience-step-content p {
@@ -1079,8 +1082,8 @@
   }
 
   /* ========= SELLER EXPERIENCE ========= */
-  .seller-exoerience-header {
-    display: block;
+  .seller-experience-section {
+    padding: 4.5rem 0;
   }
 
   .seller-experience-actions-desktop {
@@ -1108,34 +1111,44 @@
   }
 
   .seller-experience-intro h2 {
-    font-size: clamp(2.8rem, 13vw, 4rem);
-    line-height: 1.05;
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+    line-height: 1;
   }
 
   .seller-experience-lead {
+    margin-top: 1rem;
     line-height: 1.5;
   }
 
+  .seller-experience-header {
+    margin-bottom: 3rem;
+  }
+
   .seller-experience-copy {
-    margin: 2.5rem 0 2rem;
+    max-width: none;
+    margin: 1.75rem 0 2.25rem;
+
     font-size: 1rem;
     line-height: 1.7;
   }
 
   .seller-experience-step {
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 72px 1fr;
     gap: 1.25rem;
 
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .seller-experience-number {
-    font-size: 2.8rem;
+    font-size: 3rem;
+    line-height: 0.95;
   }
 
   .seller-experience-step-content h3 {
+    margin-bottom: 0.5rem;
+
     font-size: 0.82rem;
-    line-height: 1.4;
+    line-height: 1.25;
   }
 
   .seller-experience-step-content p {
