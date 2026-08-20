@@ -1,6 +1,6 @@
 /* =========================================================
    ESTATE SALES -- HERO, SALE OPTIONS, SUPPORT, WHERE TO
-    START
+    START, PREP CONNECTION
    ========================================================= */
 
 /* ========= HERO ========= */
@@ -466,6 +466,97 @@
   color: var(--color-text-soft);
 }
 
+/* ========= PREP CONNECTION ========= */
+.estate-prep-section {
+  padding: 5rem 0;
+  background: var(--color-surface);
+}
+
+.estate-prep-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.estate-prep-content::before {
+  content: "";
+  display: block;
+
+  width: 72px;
+  height: 2px;
+
+  margin-bottom: 2rem;
+
+  background: var(--color-accent);
+}
+
+.estate-prep-content {
+  max-width: 720px;
+}
+
+.estate-prep-content h2 {
+  margin: 0 0 1.25rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 4vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.estate-prep-content p {
+  max-width: 650px;
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.estate-prep-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+
+  padding-bottom: 0.4rem;
+
+  border-bottom: 1px solid var(--color-accent);
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.estate-prep-link svg {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.estate-prep-link:hover {
+  opacity: 0.75;
+}
+
+.estate-prep-link:hover svg {
+  transform: translateX(4px);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -718,5 +809,32 @@
   .estate-start-path-content p {
     font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  /* ========= PREP CONNECTION ========= */
+  .estate-prep-section {
+    padding: 4rem 0;
+  }
+
+  .estate-prep-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .estate-prep-content h2 {
+    margin-bottom: 1.25rem;
+
+    font-size: clamp(2.5rem, 11vw, 3.25rem);
+    line-height: 1.03;
+  }
+
+  .estate-prep-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .estate-prep-link {
+    font-size: 0.75rem;
   }
 }
