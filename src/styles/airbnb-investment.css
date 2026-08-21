@@ -317,7 +317,7 @@
 
 /* ========= GUIDANCE ========= */
 .airbnb-guidance-section {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
   background: var(--color-background);
 }
 
@@ -448,6 +448,150 @@
   line-height: 1.65;
 
   color: var(--color-text-soft);
+}
+
+/* ========= GOALS ========= */
+.airbnb-goals-section {
+  background: var(--color-background);
+}
+
+.airbnb-goals-container {
+  position: relative;
+
+  width: 100%;
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.airbnb-goals-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.airbnb-goals-container::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+.airbnb-goals-content {
+  position: relative;
+  z-index: 1;
+
+  width: min(520px, calc(100% - 4rem));
+  margin-left: max(calc((100vw - 1120px) / 2), 2rem);
+
+  padding: 3.5rem 3.75rem;
+
+  background: var(--color-background);
+}
+
+.airbnb-goals-content::before {
+  content: "";
+
+  display: block;
+
+  width: 54px;
+  height: 1px;
+
+  margin-bottom: 1.5rem;
+
+  background: var(--color-accent);
+}
+
+.airbnb-goals-eyebrow {
+  margin: 0 0 1rem;
+
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+}
+
+.airbnb-goals-content h2 {
+  margin: 0 0 1.5rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.75rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+
+  color: var(--color-text);
+}
+
+.airbnb-goals-content h2 em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.airbnb-goals-description {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: var(--color-text-soft);
+}
+
+.airbnb-goals-action {
+  margin-top: 2rem;
+}
+
+.airbnb-goals-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  padding-bottom: 0.4rem;
+
+  border-bottom: 1px solid var(--color-accent);
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.airbnb-goals-link span {
+  font-size: 1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.airbnb-goals-link:hover {
+  gap: 0.85rem;
+  border-color: var(--color-accent-dark);
+}
+
+.airbnb-goals-link:hover span {
+  transform: translateX(3px);
 }
 
 /* ========================================
@@ -588,7 +732,7 @@
 
   /* ========= GUIDANCE ========= */
   .airbnb-guidance-section {
-    padding: 4rem 0;
+    padding: 4rem 0 1rem;
   }
 
   .airbnb-guidance-container {
@@ -653,5 +797,81 @@
   .airbnb-guidance-point-content p {
     font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  /* ========= GOALS ========= */
+  .airbnb-goals-section {
+    background: var(--color-background);
+  }
+
+  .airbnb-goals-container {
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    overflow: visible;
+  }
+
+  .airbnb-goals-image {
+    position: relative;
+    inset: auto;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .airbnb-goals-container::after {
+    display: none;
+  }
+
+  .airbnb-goals-content {
+    position: relative;
+
+    width: 100%;
+    margin: 0;
+
+    padding: 2.5rem 2rem 4rem;
+
+    background: var(--color-background);
+  }
+
+  .airbnb-goals-content::before {
+    width: 48px;
+    margin-bottom: 1.5rem;
+  }
+
+  .airbnb-goals-eyebrow {
+    margin-bottom: 1.25rem;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .airbnb-goals-content h2 {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+
+    font-size: clamp(2.75rem, 12vw, 3.5rem);
+    line-height: 0.98;
+  }
+
+  .airbnb-goals-description {
+    max-width: 100%;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .airbnb-goals-action {
+    margin-top: 2rem;
+  }
+
+  .airbnb-goals-link {
+    font-size: 0.78rem;
   }
 }
