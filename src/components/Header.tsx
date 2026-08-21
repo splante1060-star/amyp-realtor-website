@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -8,6 +10,7 @@ import RateReviewOutlinedIcon from "@mui/icons-material/RateReviewOutlined";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+
 import logo from "../assets/Plante Realty Logo-US.png";
 
 export default function Header() {
@@ -27,11 +30,52 @@ export default function Header() {
         </a>
 
         <nav className="site-nav desktop-nav" aria-label="Main Navigation">
-          <a href="/buy-or-sell">Buy or Sell</a>
+          <NavLink
+            to="/buy-or-sell"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Buy or Sell
+          </NavLink>
+          <NavLink
+            to="/divorce-real-estate"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Divorce
+          </NavLink>
+          <NavLink
+            to="/prep-to-sell"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Prep to Sell
+          </NavLink>
+          <NavLink
+            to="/estate-sales-downsizing"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Estate Sales / Downsizing
+          </NavLink>
+          <NavLink
+            to="/airbnb-investment"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Airbnb & Investment
+          </NavLink>
+
+          {/* <a href="/buy-or-sell">Buy or Sell</a>
           <a href="/divorce-real-estate">Divorce</a>
           <a href="/prep-to-sell">Prep to Sell</a>
           <a href="/estate-sales-downsizing">Estate Sales / Downsizing</a>
-          <a href="/airbnb-investment">Airbnb & Investment</a>
+          <a href="/airbnb-investment">Airbnb & Investment</a> */}
           <div
             className="nav-dropdown"
             onMouseEnter={() => setResourcesOpen(true)}

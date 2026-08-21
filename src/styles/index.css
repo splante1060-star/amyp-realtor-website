@@ -220,6 +220,10 @@ section {
   gap: 1rem 2rem;
 }
 
+.nav-link.active {
+  color: var(--color-accent);
+}
+
 .site-nav > a,
 .nav-dropdown-trigger {
   padding: 0;
@@ -242,7 +246,7 @@ section {
 .site-nav > a:hover,
 .nav-dropdown-trigger:hover,
 .nav-dropdown-trigger[aria-expanded="true"] {
-  color: var(--color-accent);
+  color: #800000bd;
 }
 
 .nav-dropdown {
