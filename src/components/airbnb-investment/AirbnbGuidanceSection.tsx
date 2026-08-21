@@ -44,7 +44,7 @@ const guidancePoints = [
 
 export default function AirbnbGuidanceSection() {
   return (
-    <section className="airbnb-guidance-section">
+    <section id="airbnb-support" className="airbnb-guidance-section">
       <div className="container airbnb-guidance-container">
         <div className="airbnb-guidance-heading">
           <h2>
