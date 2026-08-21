@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 export default function PrepToSellCallout() {
   return (
@@ -17,7 +16,7 @@ export default function PrepToSellCallout() {
 
         <Link to="/prep-to-sell" className="prep-callout-link">
           Explore Prep to Sell
-          <ArrowForwardRoundedIcon />
+          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </section>

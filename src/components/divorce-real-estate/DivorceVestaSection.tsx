@@ -1,5 +1,3 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
 export default function DivorceVestaSection() {
   return (
     <section className="divorce-vesta-section">
@@ -32,7 +30,7 @@ export default function DivorceVestaSection() {
             className="divorce-vesta-link"
           >
             Meet Amy on Vesta
-            <ArrowForwardIcon />
+            <span aria-hidden="true">→</span>
           </a>
         </div>
 

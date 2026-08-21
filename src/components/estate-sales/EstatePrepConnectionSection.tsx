@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 export default function EstatePrepConnectionSection() {
   return (
@@ -20,7 +19,7 @@ export default function EstatePrepConnectionSection() {
 
         <Link to="/prep-to-sell" className="estate-prep-link">
           Explore Prep to Sell
-          <ArrowForwardRoundedIcon />
+          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </section>

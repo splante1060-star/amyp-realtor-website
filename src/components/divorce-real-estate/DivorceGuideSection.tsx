@@ -1,5 +1,4 @@
 import DivorceGuide from "../../assets/Real Estate Divorce Guide- Amy Plante.jpg";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function DivorceGuideSection() {
   return (
@@ -35,7 +34,7 @@ export default function DivorceGuideSection() {
             className="divorce-guide-link"
           >
             Get the Free Guide
-            <ArrowForwardIcon />
+            <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
