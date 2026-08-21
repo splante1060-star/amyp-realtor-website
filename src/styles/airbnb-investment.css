@@ -4,7 +4,7 @@
 
 /* ========= HERO ========= */
 .airbnb-hero-section {
-  padding: 7rem 0 0;
+  padding: 7rem 0;
   background: var(--color-background);
 }
 
@@ -140,6 +140,181 @@
   object-position: center;
 }
 
+/* ========= OWNERSHIP EXPERIENCE ========= */
+.airbnb-experience-section {
+  padding: 7rem 0;
+  background: var(--color-section-red);
+  color: var(--color-background);
+}
+
+.airbnb-experience-container {
+  max-width: 1200px;
+}
+
+.airbnb-experience-heading {
+  max-width: 950px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.airbnb-experience-heading h2 {
+  max-width: 900px;
+  margin: 0 auto;
+
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 4vw, 4.25rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+
+  color: var(--color-background);
+}
+
+.airbnb-experience-heading h2 em {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+
+  color: rgba(248, 246, 241, 0.72);
+}
+
+.airbnb-experience-heading p {
+  max-width: 820px;
+  margin: 1.5rem auto;
+
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  color: rgba(248, 246, 241, 0.78);
+}
+
+.airbnb-experience-properties {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+  width: 100%;
+}
+
+.airbnb-experience-property {
+  display: flex;
+  flex-direction: column;
+}
+
+.airbnb-experience-property img {
+  display: block;
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.airbnb-experience-property-image {
+  display: block;
+
+  width: 100%;
+  height: 340px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.airbnb-experience-property-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding-top: 1.75rem;
+}
+
+.airbnb-experience-property-content::before {
+  content: "";
+  display: block;
+
+  width: 55px;
+  height: 1px;
+
+  margin-bottom: 1.5rem;
+
+  background: rgba(248, 246, 241, 0.65);
+}
+
+.airbnb-experience-property-eyebrow {
+  margin: 0 0 0.65rem;
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: rgba(248, 246, 241, 0.62);
+}
+
+.airbnb-experience-property-content h3 {
+  margin: 0 0 1.25rem;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+
+  color: var(--color-background);
+}
+
+.airbnb-experience-property-description {
+  max-width: 500px;
+  margin: 0 0 1.75rem;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(248, 246, 241, 0.76);
+}
+
+.airbnb-experience-property-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.6rem;
+
+  margin-top: auto;
+  padding-bottom: 0.35rem;
+
+  border-bottom: 1px solid rgba(248, 246, 241, 0.5);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-background);
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.airbnb-experience-property-link span {
+  font-size: 1rem;
+
+  transition: transform 0.2s ease;
+}
+
+.airbnb-experience-property-link:hover {
+  gap: 0.85rem;
+  border-color: var(--color-background);
+}
+
+.airbnb-experience-property-link:hover span {
+  transform: translateX(3px);
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -198,4 +373,6 @@
     object-fit: cover;
     object-position: center;
   }
+
+  /* ========= OWNERSHIP EXPERIENCE ========= */
 }
