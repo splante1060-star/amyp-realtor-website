@@ -1,13 +1,6 @@
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    FlodeskObject?: string;
-    fd?: (...args: any[]) => void;
-  }
-}
-
-export default function NewsletterPopup() {
+export default function NewsletterForm() {
   useEffect(() => {
     const existingScript = document.querySelector('script[src*="flodesk"]');
 
@@ -55,9 +48,10 @@ export default function NewsletterPopup() {
     }
 
     window.fd?.("form", {
-      formId: "675b30b8170efb5ad611c2da",
+      formId: "6a8b51decf84899acd170fc5",
+      containerEl: "#fd-form-6a8b51decf84899acd170fc5",
     });
   }, []);
 
-  return null;
+  return <div id="fd-form-6a8b51decf84899acd170fc5"></div>;
 }

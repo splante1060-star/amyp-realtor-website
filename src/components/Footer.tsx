@@ -7,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
 import amyLogo from "../assets/Plante Realty Logo-US.png";
 import kwLogo from "../assets/kw.png";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   const location = useLocation();
@@ -76,26 +77,9 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* <div className="footer-newsletter">
-            <span className="footer-newsletter-title">Stay Connected</span>
-
-            <p>
-              Subscribe to Home & Harmony for real estate insights, market
-              updates, and lifestyle tips delivered straight to your inbox.
-            </p>
-
-            <button
-              type="button"
-              className="footer-newsletter-link"
-              onClick={() => {
-                window.fd?.("form", {
-                  formId: "675b30b8170efb5ad611c2da",
-                });
-              }}
-            >
-              Join the Newsletter <span aria-hidden="true">→</span>
-            </button>
-          </div> */}
+          <div className="footer-newsletter">
+            <NewsletterForm />
+          </div>
         </div>
 
         {!isHomePage && (
