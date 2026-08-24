@@ -1,36 +1,36 @@
 const featuredSales = [
   {
-    image: "src/assets/Feature-Winchendon.jpg",
+    image: "../../assets/Feature-Winchendon.jpg",
     location: "Winchendon, MA",
     salePrice: "$1,300,000",
     detail: "Multiple Offers · Strong Terms Negotiated",
   },
   {
-    image: "src/assets/Feature-Mansfield.JPG",
+    image: "../../assets/Feature-Mansfield.JPG",
     location: "Mansfield, MA",
     salePrice: "$657,000",
     detail: "Sold Over Asking By $77,100",
   },
   {
-    image: "src/assets/Feature-Attleboro.PNG",
+    image: "../../assets/Feature-Attleboro.PNG",
     location: "Attleboro, MA",
     salePrice: "$959,900",
     detail: "Sold Over Asking By $59,900",
   },
   {
-    image: "src/assets/Feature-Methuen.jpg",
+    image: "../../assets/Feature-Methuen.jpg",
     location: "Methuen, MA",
     salePrice: "$615,000",
     detail: "Sold Over Asking By $66,000",
   },
   {
-    image: "src/assets/Feature-NAttleboro.JPG",
+    image: "../../assets/Feature-NAttleboro.JPG",
     location: "North Attleboro, MA",
     salePrice: "$835,000",
     detail: "Sold Over Asking By $90,000",
   },
   {
-    image: "src/assets/Feature-Cumberland.jpg",
+    image: "../../assets/Feature-Cumberland.jpg",
     location: "Cumberland, RI",
     salePrice: "$525,500",
     detail: "Sold Over Asking By $35,600",
@@ -66,7 +66,7 @@ export default function FeaturedSalesSection() {
               <div className="featured-sale-info">
                 <h3>{property.location}</h3>
 
-                {property.image === "src/assets/DJI_0354.jpg" ? (
+                {property.image === "../../assets/DJI_0354.jpg" ? (
                   <p className="featured-sale-price">
                     <strong>Upcoming Listing</strong>
                   </p>

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -24,12 +24,14 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-main">
           <nav className="footer-nav" aria-label="Footer Navigation">
-            <a href="/">Home</a>
-            <a href="/buy-or-sell">Buy or Sell</a>
-            <a href="/divorce-real-estate">Divorce</a>
-            <a href="/prep-to-sell">Prep to Sell</a>
-            <a href="/estate-sales-downsizing">Estate Sales / Downsizing</a>
-            <a href="/airbnb-investment">Airbnb & Investment</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/buy-or-sell">Buy or Sell</NavLink>
+            <NavLink to="/divorce-real-estate">Divorce</NavLink>
+            <NavLink to="/prep-to-sell">Prep to Sell</NavLink>
+            <NavLink to="/estate-sales-downsizing">
+              Estate Sales / Downsizing
+            </NavLink>
+            <NavLink to="/airbnb-investment">Airbnb & Investment</NavLink>
           </nav>
           <div className="footer-resources">
             <span className="footer-resources-title">Resources</span>
