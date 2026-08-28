@@ -2,7 +2,23 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/buy-or-sell",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/divorce-real-estate",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/prep-to-sell",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/estate-sales-downsizing",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/airbnb-investment",
       "destination": "/index.html"
     }
   ]
