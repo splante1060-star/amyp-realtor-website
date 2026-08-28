@@ -69,8 +69,8 @@ export default function AirbnbGuidanceSection() {
               <div className="airbnb-guidance-icon">{point.icon}</div>
 
               <div className="airbnb-guidance-point-content">
-                <h1>{point.eyebrow}</h1>
-                <h3>{point.title}</h3>
+                <h3>{point.eyebrow}</h3>
+                <h1>{point.title}</h1>
                 <p>{point.description}</p>
               </div>
             </div>

@@ -419,6 +419,17 @@
 }
 
 .airbnb-guidance-point-content h1 {
+  margin: 0 0 0.45rem;
+
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: var(--color-text);
+}
+
+.airbnb-guidance-point-content h3 {
   margin: 0 0 0.35rem;
 
   font-family: var(--font-body);
@@ -428,17 +439,6 @@
   text-transform: uppercase;
 
   color: var(--color-accent);
-}
-
-.airbnb-guidance-point-content h3 {
-  margin: 0 0 0.45rem;
-
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 400;
-  line-height: 1.2;
-
-  color: var(--color-text);
 }
 
 .airbnb-guidance-point-content p {
