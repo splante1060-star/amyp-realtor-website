@@ -418,7 +418,7 @@
   font-size: 1.25rem;
 }
 
-.airbnb-guidance-point-content h1 {
+.airbnb-guidance-title {
   margin: 0 0 0.45rem;
 
   font-family: var(--font-heading);
@@ -429,7 +429,7 @@
   color: var(--color-text);
 }
 
-.airbnb-guidance-point-content h3 {
+.airbnb-guidance-eyebrow {
   margin: 0 0 0.35rem;
 
   font-family: var(--font-body);
