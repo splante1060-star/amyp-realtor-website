@@ -56,7 +56,7 @@ export default function EstateSalesDownsizingPage() {
         intro="You do not need to have every decision made before asking for guidance."
         items={estateDownsizingFaqs}
         emailHref={estateDownsizingEmailLink}
-        emailLabel="Email Amy About the Property"
+        emailLabel="Talk Through the Property"
       />
     </div>
   );

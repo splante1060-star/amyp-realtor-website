@@ -60,7 +60,7 @@ export default function DivorceRealEstatePage() {
         intro="The right next step depends on the property, the people involved, and the decisions still being made."
         items={divorceFaqs}
         emailHref={divorceEmailLink}
-        emailLabel="Email Amy Confidentially"
+        emailLabel="Start a Private Conversation"
       />
       {/* <DivorceClosingStatement /> */}
     </div>

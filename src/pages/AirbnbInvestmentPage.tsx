@@ -54,7 +54,7 @@ export default function AirbnbInvestmentPage() {
         intro="A property should make sense for its intended use, operating reality, and your longer-term plans."
         items={investmentFaqs}
         emailHref={investmentEmailLink}
-        emailLabel="Email Amy About Your Goals"
+        emailLabel="Discuss Your Property Goals"
       />
     </div>
   );

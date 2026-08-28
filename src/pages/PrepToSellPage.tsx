@@ -64,7 +64,7 @@ export default function PrepToSellPage() {
         intro="Good preparation is selective, practical, and based on the home—not a generic renovation checklist."
         items={prepToSellFaqs}
         emailHref={prepToSellEmailLink}
-        emailLabel="Email Amy About Your Home"
+        emailLabel="Ask What’s Worth Doing"
       />
     </div>
   );
