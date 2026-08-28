@@ -21,7 +21,7 @@ const guidancePoints = [
   },
   {
     eyebrow: "Rules & Restrictions",
-    title: "Is the renal use you have in mind actually allowed?",
+    title: "Is the rental use you have in mind actually allowed?",
     description:
       "Amy helps buyers identify the rules that need to be investigated, including municipal requirements and condo or HOA restrictions.",
     icon: <AssignmentRoundedIcon />,
