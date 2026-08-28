@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 import NewsletterPopup from "./components/NewsletterPopup";
 import ScrollToTop from "./components/ScrollToTop";
+import Analytics from "./components/Analytics";
 
 import HomePage from "./pages/HomePage";
 import BuyOrSellPage from "./pages/BuyOrSellPage";
@@ -16,6 +17,8 @@ import AirbnbInvestmentPage from "./pages/AirbnbInvestmentPage";
 export default function App() {
   return (
     <div>
+      <Analytics />
+
       <NewsletterPopup />
 
       <ScrollToTop />
