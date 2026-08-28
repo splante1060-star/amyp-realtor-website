@@ -59,8 +59,6 @@ export default function SEO({ title, description, canonicalPath }: SEOProps) {
     }
 
     canonical.setAttribute("href", canonicalUrl);
-
-    document.dispatchEvent(new Event("prerender-ready"));
   }, [title, description, canonicalPath]);
 
   return null;

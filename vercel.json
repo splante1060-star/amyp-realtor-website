@@ -2,32 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/home/index.html"
-    },
-    {
-      "source": "/buy-or-sell",
-      "destination": "/buy-or-sell/index.html"
-    },
-    {
-      "source": "/divorce-real-estate",
-      "destination": "/divorce-real-estate/index.html"
-    },
-    {
-      "source": "/prep-to-sell",
-      "destination": "/prep-to-sell/index.html"
-    },
-    {
-      "source": "/estate-sales-downsizing",
-      "destination": "/estate-sales-downsizing/index.html"
-    },
-    {
-      "source": "/airbnb-investment",
-      "destination": "/airbnb-investment/index.html"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/home/index.html"
+      "destination": "/index.html"
     }
   ]
 }
