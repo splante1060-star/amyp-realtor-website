@@ -783,13 +783,13 @@
     font-size: 1.15rem;
   }
 
-  .airbnb-guidance-point-content h1 {
+  .airbnb-guidance-title {
     margin-bottom: 0.4rem;
 
     font-size: 0.85rem;
   }
 
-  .airbnb-guidance-point-content h3 {
+  .airbnb-guidance-eyebrow {
     margin-bottom: 0.8rem;
 
     font-size: 0.95rem;
