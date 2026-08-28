@@ -21,10 +21,11 @@ export default function AboutAmySection() {
           <div className="about-amy-copy">
             <p>
               Since 2002, Amy Plante has helped clients navigate real estate
-              with experience, strategy, and genuine personal attention. As a
-              Realtor® with Keller Williams, licensed in Massachusetts, Rhode
-              Island, and Florida, she brings both local expertise and a broad
-              perspective to every move.
+              with experience, strategy, and genuine personal attention. Based
+              in Plainville, Massachusetts, and affiliated with Keller Williams
+              Elite, Amy is licensed in Massachusetts, Rhode Island, and
+              Florida, bringing both local knowledge and a broad perspective to
+              every move.
             </p>
 
             <p>
