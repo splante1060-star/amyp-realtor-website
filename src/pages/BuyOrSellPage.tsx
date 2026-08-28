@@ -1,4 +1,5 @@
 import "../styles/buy-or-sell.css";
+import SEO from "../components/SEO";
 
 import BuySellHeroSection from "../components/buy-or-sell/BuySellHeroSection";
 import BuySellIntroSection from "../components/buy-or-sell/BuySellIntroSection";
@@ -12,6 +13,11 @@ import BuySellTestimonialSection from "../components/buy-or-sell/BuySellTestimon
 export default function BuyOrSellPage() {
   return (
     <div>
+      <SEO
+        title="Buy or Sell a Home in MA, RI & FL | Amy Plante"
+        description="Buy or sell with Amy Plante, an experienced Realtor serving Massachusetts, Rhode Island, and Florida with thoughtful strategy and personal guidance."
+        canonicalPath="/buy-or-sell"
+      />
       <BuySellHeroSection />
       <BuySellIntroSection />
       <BuyerExperienceSection />

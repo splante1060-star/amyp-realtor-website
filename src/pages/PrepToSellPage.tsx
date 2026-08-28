@@ -1,4 +1,5 @@
 import "../styles/prep-to-sell.css";
+import SEO from "../components/SEO";
 
 import PrepHeroSection from "../components/prep-to-sell/PrepHeroSection";
 import PrepPhilosophySection from "../components/prep-to-sell/PrepPhilosophySection";
@@ -11,6 +12,11 @@ import PrepTestimonialSection from "../components/prep-to-sell/PrepTestimonialSe
 export default function PrepToSellPage() {
   return (
     <div>
+      <SEO
+        title="Home Preparation and Prep-to-Sell Program | Amy Plante"
+        description="Prepare your home for market with Amy Plante's strategic guidance, improvement planning, contractor coordination, and practical prep-to-sell support."
+        canonicalPath="/prep-to-sell"
+      />
       <PrepHeroSection />
       <PrepPhilosophySection />
       <PrepBeforeAfterSection />

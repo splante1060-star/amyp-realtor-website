@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import SEO from "../components/SEO";
 
 import HeroSection from "./../components/home/HeroSection";
 import RealEstatePersonalSection from "./../components/home/RealEstatePersonalSection";
@@ -10,6 +11,11 @@ import FinalCTASection from "./../components/home/FinalCTASection";
 export default function App() {
   return (
     <div>
+      <SEO
+        title="Amy Plante Realtor | MA, RI & FL Real Estate"
+        description="Amy Plante helps buyers and sellers across Massachusetts, Rhode Island, and Florida with experienced guidance for everyday moves and major life transitions."
+        canonicalPath="/"
+      />
       <HeroSection />
       <RealEstatePersonalSection />
       <AboutAmySection />

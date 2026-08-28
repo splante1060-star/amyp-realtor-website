@@ -1,4 +1,5 @@
 import "../styles/estate-sales.css";
+import SEO from "../components/SEO";
 
 import EstateHeroSection from "../components/estate-sales/EstateHeroSection";
 import EstateSupportSection from "../components/estate-sales/EstateSupportSection";
@@ -9,6 +10,11 @@ import EstatePrepConnectionSection from "../components/estate-sales/EstatePrepCo
 export default function EstateSalesDownsizingPage() {
   return (
     <div>
+      <SEO
+        title="Downsizing and Estate Sale Realtor in MA & RI | Amy Plante"
+        description="Amy Plante helps families manage downsizing, estate sales, and longtime family homes with an organized plan and compassionate real estate guidance."
+        canonicalPath="/estate-sales-downsizing"
+      />
       <EstateHeroSection />
       <EstateSaleOptions />
       <EstateSupportSection />

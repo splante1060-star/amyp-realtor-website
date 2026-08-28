@@ -1,4 +1,5 @@
 import "../styles/divorce-real-estate.css";
+import SEO from "../components/SEO";
 
 import DivorceHeroSection from "../components/divorce-real-estate/DivorceHeroSection";
 import DivorceApproachSection from "../components/divorce-real-estate/DivorceApproachSection";
@@ -12,6 +13,11 @@ import DivorceTestimonialSection from "../components/divorce-real-estate/Divorce
 export default function DivorceRealEstatePage() {
   return (
     <div>
+      <SEO
+        title="Divorce Real Estate Specialist in MA & RI | Amy Plante"
+        description="Navigate the sale or evaluation of a home during divorce with Amy Plante's specialized real estate guidance, discretion, and clear communication."
+        canonicalPath="/divorce-real-estate"
+      />
       <DivorceHeroSection />
       <DivorceApproachSection />
       <DivorceHomeDecisionSection />
