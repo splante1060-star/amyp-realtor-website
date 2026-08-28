@@ -156,6 +156,13 @@ export default function Footer() {
           <div className="footer-legal">
             <span>© 2026 Amy Plante</span>
             <span className="footer-dot">·</span>
+
+            <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+
+            <span className="footer-dot">·</span>
+            <span>25 Messenger St, Plainville, MA 02762</span>
+
+            <span className="footer-dot">·</span>
             <span>Licensed in Massachusetts, Rhode Island & Florida</span>
           </div>
         </div>

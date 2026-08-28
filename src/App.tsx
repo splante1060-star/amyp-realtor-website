@@ -7,6 +7,7 @@ import NewsletterPopup from "./components/NewsletterPopup";
 import ScrollToTop from "./components/ScrollToTop";
 import Analytics from "./components/Analytics";
 
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import HomePage from "./pages/HomePage";
 import BuyOrSellPage from "./pages/BuyOrSellPage";
 import DivorceRealEstatePage from "./pages/DivorceRealEstatePage";
@@ -28,6 +29,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/buy-or-sell" element={<BuyOrSellPage />} />
           <Route
             path="/divorce-real-estate"

@@ -1,0 +1,92 @@
+.privacy-page {
+  padding: 5rem 0 7rem;
+  background: #faf9f7;
+}
+
+.privacy-container {
+  max-width: 900px;
+}
+
+.privacy-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(45, 41, 38, 0.18);
+}
+
+.privacy-eyebrow {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #8f0d08;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.privacy-header h1 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+}
+
+.privacy-header p {
+  margin: 0;
+  color: #6e6963;
+}
+
+.privacy-content {
+  max-width: 900px;
+}
+
+.privacy-content section {
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-content section + section {
+  margin-top: 2rem;
+}
+
+.privacy-content h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.35rem;
+}
+
+.privacy-content p {
+  margin: 0;
+}
+
+.privacy-content p + p {
+  margin-top: 0.8rem;
+}
+
+.privacy-content ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.privacy-content p,
+.privacy-content li,
+.privacy-content address {
+  color: #514d48;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.privacy-content a {
+  color: #8f0d08;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.privacy-content address {
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  .privacy-page {
+    padding: 3.5rem 0 5rem;
+  }
+}

@@ -4,6 +4,7 @@ type SEOProps = {
   title: string;
   description: string;
   canonicalPath: string;
+  robots?: string;
 };
 
 const SITE_URL = "https://www.amyplanterealtor.com";
@@ -27,15 +28,19 @@ function setMetaTag(
   element.setAttribute("content", content);
 }
 
-export default function SEO({ title, description, canonicalPath }: SEOProps) {
+export default function SEO({
+  title,
+  description,
+  canonicalPath,
+  robots = "index, follow",
+}: SEOProps) {
   useEffect(() => {
     const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
     document.title = title;
 
     setMetaTag("name", "description", description);
-    setMetaTag("name", "robots", "index, follow");
-
+    setMetaTag("name", "robots", robots);
     setMetaTag("property", "og:type", "website");
     setMetaTag("property", "og:site_name", "Amy Plante Realtor");
     setMetaTag("property", "og:title", title);
@@ -59,7 +64,7 @@ export default function SEO({ title, description, canonicalPath }: SEOProps) {
     }
 
     canonical.setAttribute("href", canonicalUrl);
-  }, [title, description, canonicalPath]);
+  }, [title, description, canonicalPath, robots]);
 
   return null;
 }
