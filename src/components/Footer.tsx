@@ -161,7 +161,13 @@ export default function Footer() {
             </div>
 
             <div className="footer-legal-row">
-              <span>25 Messenger St, Plainville, MA 02762</span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=25%20Messenger%20St%2C%20Plainville%2C%20MA%2002762"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                25 Messenger St, Plainville, MA 02762
+              </a>
             </div>
 
             <div className="footer-legal-row">
