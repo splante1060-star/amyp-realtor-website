@@ -26,8 +26,7 @@ export default function BuySellIntroSection() {
 
           <h2>
             Sell with a strategy,
-            <br />
-            not just a sign.
+            <br /> not just a sign.
           </h2>
 
           <p>

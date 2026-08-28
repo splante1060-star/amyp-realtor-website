@@ -5,7 +5,9 @@ export default function AirbnbHeroSection() {
     <section className="airbnb-hero-section">
       <div className="container airbnb-hero-container">
         <h1 className="airbnb-hero-title">
-          Real estate can be more than <br /> <em>a place to call home.</em>
+          Real estate can be more than
+          <br />
+          <em>a place to call home.</em>{" "}
         </h1>
 
         <div className="airbnb-hero-image-wrapper">
