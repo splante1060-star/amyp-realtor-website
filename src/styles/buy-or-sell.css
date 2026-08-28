@@ -287,9 +287,12 @@
 
   text-decoration: none;
 
+  white-space: nowrap;
+
   transition:
     border-color 0.2s ease,
-    opacity 0.2s ease;
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .buyer-experience-primary {
@@ -312,13 +315,15 @@
   transform: translateY(-2px);
 }
 
-.buyer-experience-actions a span {
-  font-size: 1rem;
+.buyer-experience-actions a svg {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+
   transition: transform 0.2s ease;
 }
 
-.buyer-experience-actions a:hover span {
-  transform: translateX(4px);
+.buyer-experience-actions a:hover svg {
+  transform: scale(1.1);
 }
 
 .buyer-experience-copy {
@@ -542,9 +547,12 @@
 
   text-decoration: none;
 
+  white-space: nowrap;
+
   transition:
     border-color 0.2s ease,
-    opacity 0.2s ease;
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .seller-experience-primary {
@@ -569,13 +577,15 @@
   transform: translateY(-2px);
 }
 
-.seller-experience-actions a span {
-  font-size: 1rem;
+.seller-experience-actions a svg {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+
   transition: transform 0.2s ease;
 }
 
-.seller-experience-actions a:hover span {
-  transform: translateX(4px);
+.seller-experience-actions a:hover svg {
+  transform: scale(1.1);
 }
 
 .seller-experience-copy {

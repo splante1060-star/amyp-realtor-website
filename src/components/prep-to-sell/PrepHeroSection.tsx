@@ -1,4 +1,5 @@
 import prepHero from "../../assets/CAI_1197.jpg";
+import { prepToSellEmailLink } from "../../utils/emailLinks";
 
 export default function PrepHeroSection() {
   return (
@@ -23,13 +24,8 @@ export default function PrepHeroSection() {
           its strongest first impression.
         </p>
 
-        <a
-          href="https://calendly.com/amyplanterealtor"
-          target="_blank"
-          rel="noreferrer"
-          className="prep-hero-action"
-        >
-          Talk About Your Home <span aria-hidden="true">→</span>
+        <a href={prepToSellEmailLink} className="prep-hero-action">
+          Plan Your Prep <span aria-hidden="true">→</span>
         </a>
 
         {/* <p className="prep-hero-detail">

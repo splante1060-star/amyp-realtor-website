@@ -103,7 +103,9 @@
 
 .airbnb-hero-secondary {
   min-height: 48px;
-  width: 185px;
+  width: auto;
+  min-width: 210px;
+  white-space: nowrap;
 
   gap: 0.65rem;
 

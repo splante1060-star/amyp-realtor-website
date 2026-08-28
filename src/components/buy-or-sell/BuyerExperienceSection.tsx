@@ -1,3 +1,7 @@
+import { buyerEmailLink } from "../../utils/emailLinks";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+
 const buyerSteps = [
   {
     number: "01",
@@ -41,16 +45,17 @@ export default function BuyerExperienceSection() {
               rel="noreferrer"
               className="buyer-experience-primary"
             >
-              Search Homes <span aria-hidden="true">→</span>
+              <SearchOutlinedIcon aria-hidden="true" />
+              Search Homes
             </a>
 
             <a
-              href="https://calendly.com/amyplanterealtor"
-              target="_blank"
-              rel="noreferrer"
+              href={buyerEmailLink}
               className="buyer-experience-secondary"
+              aria-label="Email Amy about buying a home"
             >
-              Book a Consultation <span aria-hidden="true">→</span>
+              <EmailOutlinedIcon aria-hidden="true" />
+              Ask About Buying
             </a>
           </div>
         </div>
@@ -81,16 +86,17 @@ export default function BuyerExperienceSection() {
             rel="noreferrer"
             className="buyer-experience-primary"
           >
-            Search Homes <span aria-hidden="true">→</span>
+            <SearchOutlinedIcon aria-hidden="true" />
+            Search Homes
           </a>
 
           <a
-            href="https://calendly.com/amyplanterealtor"
-            target="_blank"
-            rel="noreferrer"
+            href={buyerEmailLink}
             className="buyer-experience-secondary"
+            aria-label="Email Amy about buying a home"
           >
-            Book a Consultation <span aria-hidden="true">→</span>
+            <EmailOutlinedIcon aria-hidden="true" />
+            Ask About Buying
           </a>
         </div>
       </div>

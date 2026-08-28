@@ -60,7 +60,7 @@ export default function BuyOrSellPage() {
         intro="A clear plan starts with understanding what matters before making a move."
         items={buySellFaqs}
         emailHref={buySellEmailLink}
-        emailLabel="Email Amy About Your Move"
+        emailLabel="Ask About Your Move"
       />
       {/* <BuySellClosingStatement /> */}
     </div>

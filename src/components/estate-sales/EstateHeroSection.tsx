@@ -1,5 +1,6 @@
 import estateHero from "../../assets/Estate-Sales-Hero.jpg";
 // import estateSaleHero from "../../assets/IMG_6067.jpg";
+import { estateDownsizingEmailLink } from "../../utils/emailLinks";
 
 export default function EstateHeroSection() {
   return (
@@ -25,14 +26,8 @@ export default function EstateHeroSection() {
         </p>
 
         <div className="estate-hero-actions">
-          <a
-            href="https://calendly.com/amyplanterealtor"
-            target="_blank"
-            rel="noreferrer"
-            className="estate-hero-primary"
-          >
-            Let's Talk
-            <span aria-hidden="true">→</span>
+          <a href={estateDownsizingEmailLink} className="estate-hero-primary">
+            Talk Next Steps <span aria-hidden="true">→</span>
           </a>
 
           <a href="#estate-support" className="estate-hero-secondary">

@@ -1,4 +1,5 @@
 import heroImage from "../../assets/airbnb-invest.jpg";
+import { investmentEmailLink } from "../../utils/emailLinks";
 
 export default function AirbnbHeroSection() {
   return (
@@ -29,14 +30,8 @@ export default function AirbnbHeroSection() {
           <a href="#airbnb-support" className="airbnb-hero-primary">
             See How Amy Can Help
           </a>
-          <a
-            href="https://calendly.com/amyplanterealtor"
-            target="_blank"
-            rel="noreferrer"
-            className="airbnb-hero-secondary"
-          >
-            Let's Talk
-            <span aria-hidden="true">→</span>
+          <a href={investmentEmailLink} className="airbnb-hero-secondary">
+            Discuss Your Goals <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
