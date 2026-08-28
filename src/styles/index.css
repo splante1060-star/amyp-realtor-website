@@ -457,8 +457,18 @@ section {
   align-items: center;
   gap: 0.65rem;
 
-  font-size: 0.8rem;
   color: var(--color-text-soft);
+  font-size: 0.8rem;
+}
+
+.footer-legal-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.footer-legal-row + .footer-legal-row::before {
+  content: "·";
 }
 
 .footer-legal a {
@@ -467,7 +477,7 @@ section {
 }
 
 .footer-legal a:hover {
-  color: #8f0d08;
+  color: var(--color-accent);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
@@ -1106,6 +1116,42 @@ section {
     padding: 0.8rem 1rem;
 
     font-size: 0.66rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+
+    padding-top: 1.5rem;
+  }
+
+  .footer-brokerage-logo {
+    width: 120px;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    width: 100%;
+
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .footer-legal-row {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .footer-legal-row + .footer-legal-row::before {
+    display: none;
+  }
+
+  .footer-legal-primary {
+    flex-wrap: wrap;
   }
 
   /* ========= BEFORE / AFTER SLIDER ========= */
