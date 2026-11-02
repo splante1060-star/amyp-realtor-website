@@ -1,6 +1,6 @@
 import featureWinchendon from "../../assets/Feature-Winchendon.jpg";
 import featureMansfield from "../../assets/Feature-Mansfield.jpg";
-import featureAttleboro from "../../assets/Feature-Attleboro.png";
+import featureAttleboro from "../../assets/Feature-Attleboro.jpg";
 import featureMethuen from "../../assets/Feature-Methuen.jpg";
 import featureNAttleboro from "../../assets/Feature-NAttleboro.jpg";
 import featureCumberland from "../../assets/Feature-Cumberland.jpg";
