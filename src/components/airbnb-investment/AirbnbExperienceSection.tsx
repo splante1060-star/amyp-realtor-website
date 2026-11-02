@@ -51,6 +51,8 @@ export default function AirbnbExperienceSection() {
                 src={property.photo}
                 alt={`${property.title} in ${property.eyebrow}`}
                 className="airbnb-experience-property-image"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="airbnb-experience-property-content">

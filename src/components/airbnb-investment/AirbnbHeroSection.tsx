@@ -14,8 +14,10 @@ export default function AirbnbHeroSection() {
         <div className="airbnb-hero-image-wrapper">
           <img
             src={heroImage}
-            alt="Investment Property"
+            alt="Investment property"
             className="airbnb-hero-image"
+            fetchPriority="high"
+            loading="eager"
           />
         </div>
 

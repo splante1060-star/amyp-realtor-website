@@ -8,6 +8,10 @@ export default function AirbnbGoalsSection() {
           src={bonitaSunset}
           alt="Stunning sunset over Bonita National Clubhouse"
           className="airbnb-goals-image"
+          loading="lazy"
+          decoding="async"
+          width={1600}
+          height={854}
         />
 
         <div className="airbnb-goals-content">
