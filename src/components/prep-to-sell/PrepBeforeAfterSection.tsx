@@ -9,8 +9,8 @@ import bedroomAfter from "../../assets/After-Bedroom.jpg";
 import basementBefore from "../../assets/Before-Basement.jpg";
 import basementAfter from "../../assets/After-Basement.jpg";
 
-import exteriorBefore from "../../assets/Before-Exterior.png";
-import exteriorAfter from "../../assets/After-Exterior.png";
+import exteriorBefore from "../../assets/Before-Exterior.jpg";
+import exteriorAfter from "../../assets/After-Exterior.jpg";
 
 export default function PrepBeforeAfterSection() {
   return (
