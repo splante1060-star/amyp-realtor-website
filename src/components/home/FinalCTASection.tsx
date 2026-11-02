@@ -11,7 +11,13 @@ export default function FinalCTASection() {
     <section className="final-cta-section">
       <div className="container final-cta-container">
         <div className="final-cta-image-wrapper">
-          <img src={amyHeadshot} alt="Amy Plante" className="final-cta-image" />
+          <img
+            src={amyHeadshot}
+            alt="Amy Plante"
+            className="final-cta-image"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div className="final-cta-content">
           <h2>Let's talk about what comes next.</h2>

@@ -65,7 +65,11 @@ export default function FeaturedSalesSection() {
                   <img
                     className="featured-sale-image"
                     src={property.image}
-                    alt={`${property.location}`}
+                    alt={property.location}
+                    loading="lazy"
+                    decoding="async"
+                    width={1200}
+                    height={900}
                   />
                 )}
               </div>

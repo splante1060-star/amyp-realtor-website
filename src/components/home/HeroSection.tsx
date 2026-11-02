@@ -10,8 +10,15 @@ export default function HeroSection() {
           <h1>Real Estate Guidance for Life's Biggest Transitions</h1>
 
           <div className="hero-mobile-image">
-            <img className="hero-image" src={heroAmy} alt="Amy Plante" />
-
+            <img
+              className="hero-image"
+              src={heroAmy}
+              alt="Amy Plante"
+              width={1024}
+              height={1534}
+              fetchPriority="high"
+              loading="eager"
+            />
             <div className="hero-image-caption">
               <span className="hero-name">Amy Plante</span>
               <span className="hero-title">Realtor® · MA · RI · FL</span>
@@ -55,7 +62,15 @@ export default function HeroSection() {
         </div>
 
         <div className="hero-image-wrapper hero-desktop-image">
-          <img className="hero-image" src={heroAmy} alt="Amy Plante" />
+          <img
+            className="hero-image"
+            src={heroAmy}
+            alt="Amy Plante"
+            width={1024}
+            height={1534}
+            fetchPriority="high"
+            loading="eager"
+          />{" "}
           <div className="hero-image-caption">
             <span className="hero-name">Amy Plante</span>
             <span className="hero-title">Realtor® · MA · RI · FL</span>

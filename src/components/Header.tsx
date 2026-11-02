@@ -26,6 +26,8 @@ export default function Header() {
             src={logo}
             alt="Plante Realty Group"
             className="site-logo-image"
+            width={500}
+            height={500}
           />
         </a>
 

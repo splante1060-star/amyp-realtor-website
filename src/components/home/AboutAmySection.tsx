@@ -10,7 +10,13 @@ export default function AboutAmySection() {
     <section className="about-amy-section">
       <div className="container about-amy-container">
         <div className="about-amy-image-wrapper">
-          <img className="about-amy-image" src={amyAbout} alt="Amy Plante" />
+          <img
+            className="about-amy-image"
+            src={amyAbout}
+            alt="Amy Plante"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div className="about-amy-content">
