@@ -19,7 +19,7 @@ function sendEvent(eventName: string, parameters = {}) {
   window.gtag("event", eventName, parameters);
 }
 
-export default function Analytics() {
+export default function GAnalytics() {
   const location = useLocation();
 
   useEffect(() => {

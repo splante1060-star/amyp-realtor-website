@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import NewsletterPopup from "./components/NewsletterPopup";
 import ScrollToTop from "./components/ScrollToTop";
-import Analytics from "./components/Analytics";
+import GAnalytics from "./components/Analytics";
 
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import HomePage from "./pages/HomePage";
@@ -18,6 +19,7 @@ import AirbnbInvestmentPage from "./pages/AirbnbInvestmentPage";
 export default function App() {
   return (
     <div>
+      <GAnalytics />
       <Analytics />
 
       <NewsletterPopup />
