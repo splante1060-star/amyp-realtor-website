@@ -14,8 +14,8 @@ export default function HeroSection() {
               className="hero-image"
               src={heroAmy}
               alt="Amy Plante"
-              width={1024}
-              height={1534}
+              width={800}
+              height={1000}
               fetchPriority="high"
               loading="eager"
             />
@@ -66,8 +66,8 @@ export default function HeroSection() {
             className="hero-image"
             src={heroAmy}
             alt="Amy Plante"
-            width={1024}
-            height={1534}
+            width={800}
+            height={1000}
             fetchPriority="high"
             loading="eager"
           />{" "}
