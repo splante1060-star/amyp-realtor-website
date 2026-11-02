@@ -1,4 +1,4 @@
-import bonitaSunset from "../../assets/bonita-sunset.png";
+import bonitaSunset from "../../assets/bonita-sunset.jpg";
 
 export default function AirbnbGoalsSection() {
   return (
