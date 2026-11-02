@@ -33,6 +33,11 @@
   --transition: 180ms ease;
 }
 
+.route-loading {
+  min-height: calc(100vh - 200px);
+  background: var(--color-background);
+}
+
 /* =========================================================
    2. RESET & GLOBAL 
    ========================================================= */
